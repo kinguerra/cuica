@@ -1,0 +1,15 @@
+#main{:role => "main"}
+  #historia.page-panel
+  = render 'historia'
+#main{:role => "main"}
+  #producao.page-panel
+    = render 'producao'
+= render 'diretores-docdama'
+#main{:role => "main"}
+  #equipe.page-panel
+    .row
+      .large-12.columns
+        %h3.subheader{"data-reveal-id" => "fichaEquipe"}
+          = link_to "Equipe !!", '#' 
+        %br
+          %small> (Clique para abrir)

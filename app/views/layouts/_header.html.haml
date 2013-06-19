@@ -1,0 +1,39 @@
+.row
+  .large-2.columns
+    %nav#menu{:role => "navigation"}
+      .section-container.vertical-nav
+        .section
+          .main.nav-item= link_to "A História", '#historia'
+        .section
+          .main.nav-item= link_to "A Produção", '#producao'
+        .section
+          .main.nav-item= link_to "Os Diretores", '#diretores'
+        .section
+          .main.nav-item= link_to "A Equipe", '#equipe'
+        .section
+          .main.nav-item= link_to "A Docdoma", '#docdoma'
+  .large-6.columns
+    %h1
+      = link_to "Cuica de Santo Amaro ", root_path
+      %small> o poeta mais temido da Bahia
+  .large-4.columns
+    .large-6.small-6.columns
+      %h3{"data-reveal-id" => "trailer"}
+        =link_to "Assista o Trailer", '#'
+    .large-6.small-6.columns
+      %h5 produção docdoma filmes
+    .large-12.small-12.columns
+      %h6
+        = link_to "últimas notícias >>", "#"
+  .row
+    .small-8.large-8.columns
+      %ul.inline-list
+        %li
+          =link_to "Filme", root_path
+        %li
+          =link_to "Notícias", '#'
+        %li
+          =link_to "Personagem", '/personagem'
+        %li
+          =link_to "Blog", '#'
+  %hr
