@@ -1,0 +1,13 @@
+.row
+  .small-12.columns
+
+    %p#notice= notice
+
+    %h3.subheader
+      = @post.title
+    %p
+      = @post.content
+
+    = link_to 'Edit', edit_post_path(@post)
+    \|
+    = link_to 'Back', posts_path

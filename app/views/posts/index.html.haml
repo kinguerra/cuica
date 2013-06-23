@@ -1,0 +1,10 @@
+.row
+  .small-12.columns
+    %h1.subheader Notícias
+    - @posts.each do |post|
+      %h4= post.title
+      %p= post.content
+      %p= link_to 'Show', post
+      %p= link_to 'Edit', edit_post_path(post)
+      %p= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }
+    = link_to 'New Post', new_post_path

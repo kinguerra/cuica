@@ -1,6 +1,8 @@
 class Admin < ActiveRecord::Base
   devise :database_authenticatable, :rememberable, :trackable, :timeoutable, :lockable  
   attr_accessible :login, :email, :password, :password_confirmation
+
+  has_many :posts
 end
 # class Admin < ActiveRecord::Base
 #   # Include default devise modules. Others available are:

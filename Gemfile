@@ -10,6 +10,12 @@ group :development, :test do
   gem 'rspec-rails', '2.11.0'
 end
 
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+
 group :assets do
   gem 'sass-rails',   '3.2.5'
   gem 'coffee-rails', '3.2.2'
