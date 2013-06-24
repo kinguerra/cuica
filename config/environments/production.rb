@@ -51,9 +51,9 @@ Cuica::Application.configure do
 
   # Disable delivery errors, bad email addresses will be ignored
   # config.action_mailer.raise_delivery_errors = false
-  ActionMailer::Base.delivery_method = :sendmail
-  ActionMailer::Base.raise_delivery_errors = true
-  ActionMailer::Base.charset = "utf-8"
+  # ActionMailer::Base.delivery_method = :sendmail
+  # ActionMailer::Base.raise_delivery_errors = true
+  # ActionMailer::Base.charset = "utf-8"
 
   # Enable threaded mode
   # config.threadsafe!
