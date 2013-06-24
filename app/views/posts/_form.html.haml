@@ -7,10 +7,8 @@
           %li= msg
 
   .field
-    = f.label :title
-    = f.text_field :title
+    = f.text_field :title, placeholder: "Título"
   .field
-    = f.label :content
-    = f.text_field :content
+    = f.text_area :content, placeholder: "Conteúdo"
   .actions
     = f.submit 'Save'
