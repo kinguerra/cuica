@@ -1,0 +1,51 @@
+/* Header*/
+.logo {
+  padding-top: 300px;
+}
+.desc {
+  padding-top: 15px;
+}
+
+.header { 
+  background-image: url("cuica_back.png");
+  background-size: 750px;
+  background-repeat: no-repeat;
+  background-position: 5% 80%;
+  height: 400px;
+  padding-top: 30px;
+}
+
+.navbar {
+  padding-top: 440px;
+  padding-left: 15px;
+  ul {
+    li {
+      margin: 20px;
+      a {
+        padding: 10px 8px 5px 15px;
+      }
+      :hover {
+        background-color: red;
+      }
+    }
+  }
+}
+
+.docdoma {
+  width: 60%
+}
+
+ol.side-nav {
+  background-color: #EDEBD7;
+  width: 110%;
+  li {
+    margin: 5px 0px 5px 30px;
+    a {
+      padding: 5px
+    }
+    :hover {
+      background-color: #00adef;
+    }
+  }
+
+}

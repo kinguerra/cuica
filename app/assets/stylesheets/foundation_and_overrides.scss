@@ -15,9 +15,9 @@
 // $em-base: 16px;
 
 // We use these to control various global styles
-// $body-bg: #fff;
+$body-bg: #EDEBD7;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Courier New", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -28,7 +28,7 @@
 // $text-direction: ltr;
 
 // We use these as default colors throughout
-// $primary-color: #2ba6cb;
+$primary-color: #362619;
 // $secondary-color: #e9e9e9;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
@@ -85,7 +85,7 @@
 //
 
 // We use these to control header font styles
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "TrixieText", "Helvetica", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -116,8 +116,8 @@
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: normal;
-// $paragraph-font-size: 1em;
-// $paragraph-line-height: 1.6;
+$paragraph-font-size: 0.8em;
+$paragraph-line-height: 1.8;
 // $paragraph-margin-bottom: emCalc(20px);
 // $paragraph-aside-font-size: emCalc(14px);
 // $paragraph-aside-line-height: 1.35;
