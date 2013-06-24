@@ -2,12 +2,6 @@ Cuica::Application.routes.draw do
 
   resources :posts
 
-
-  devise_for :admins do
-    get '/admin'   => 'devise/sessions#new',       :as => :new_admin_session
-    post '/admin'  => 'devise/sessions#create',    :as => :new_admin_session
-    get '/admins/sign_out' => 'devise/sessions#destroy', :as => :destroy_admin_session
-  end
   root :to => 'static_pages#filme'
 
   match '/equipe' => 'static_pages#equipe'
