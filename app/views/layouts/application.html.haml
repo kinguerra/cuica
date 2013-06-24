@@ -24,6 +24,12 @@
   = csrf_meta_tag
 
 %body
+  - if flash[:error]
+    .error= flash[:error]
+  - if flash[:notice]
+    .notice= flash[:notice]
+  - if flash[:alert]
+    .alert= flash[:alert]
 
   = render 'layouts/header'
   = yield

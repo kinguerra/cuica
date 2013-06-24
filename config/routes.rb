@@ -1,5 +1,9 @@
 Cuica::Application.routes.draw do
-
+  get 'admin', to: 'sessions#new', as: 'admin'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+  
+  resources :admins
+  resources :sessions
   resources :posts
 
   root :to => 'static_pages#filme'
