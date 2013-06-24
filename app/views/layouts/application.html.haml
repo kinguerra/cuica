@@ -15,12 +15,10 @@
   -# Set the viewport width to device width for mobile
   %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1.0" }
 
-  %title= content_for?(:title) ? yield(:title) : "Untitled"
+  %title= content_for?(:title) ? yield(:title) : "Cuica de Santo Amaro"
 
   = stylesheet_link_tag "application"
-  = javascript_include_tag "js/custom.modernizr"
-  = javascript_include_tag "js/foundation.min"
-  = javascript_include_tag :all 
+  = javascript_include_tag "vendor/custom.modernizr"
   = csrf_meta_tag
 
 %body
@@ -37,8 +35,6 @@
 
   = javascript_include_tag "application"
 
-  = render 'static_pages/equipe'
-
   #trailer.reveal-modal.large
     .flex-video
       %iframe{:allowfullscreen => "", :frameborder => "0", :height => "720", :src => "http://www.youtube.com/embed/dekX4o6UUHI?rel=0", :width => "1280"}
@@ -47,8 +43,6 @@
 
   / Check for Zepto support, load jQuery if necessary
   :javascript
-    document.write('<script src=/assets/vendor/'
+    document.write('<script src=/js/vendor/'
       + ('__proto__' in {} ? 'zepto' : 'jquery')
       + '.js></script>');
-  :javascript
-    $(document).foundation();
