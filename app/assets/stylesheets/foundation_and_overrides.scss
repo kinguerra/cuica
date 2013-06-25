@@ -1,5 +1,6 @@
 // Required global settings and mixins for Foundation
 @import "foundation/foundation-global";
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
 
 // Settings file to override Foundation variables
 
@@ -85,7 +86,7 @@ $row-width: 58em;
 //
 
 // We use these to control header font styles
-$header-font-family: "TrixieText", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "Special Elite", "Helvetica", Helvetica, Arial, sans-serif;
 // $header-font-weight: bold;
 // $header-font-style: normal;
 // $header-font-color: #222;
@@ -116,8 +117,8 @@ $header-font-family: "TrixieText", "Helvetica", Helvetica, Arial, sans-serif;
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: normal;
-$paragraph-font-size: 0.8em;
-$paragraph-line-height: 1.8;
+$paragraph-font-size: 0.9em;
+$paragraph-line-height: 2;
 // $paragraph-margin-bottom: emCalc(20px);
 // $paragraph-aside-font-size: emCalc(14px);
 // $paragraph-aside-line-height: 1.35;
