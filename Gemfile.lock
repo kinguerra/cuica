@@ -163,7 +163,7 @@ DEPENDENCIES
   coffee-rails (= 3.2.2)
   haml-rails
   jquery-rails (= 2.0.2)
-  pg (= 0.12.2)
+  pg
   rails (= 3.2.13)
   rspec-rails (= 2.11.0)
   sass-rails (= 3.2.5)
