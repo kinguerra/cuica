@@ -81,4 +81,9 @@ class PostsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def noticia
+    @noticia = Post.first
+  end
+  helper_method :noticia
 end

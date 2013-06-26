@@ -21,7 +21,8 @@
         .docdoma= image_tag('docdoma.png')
       .large-12.small-12.columns
         %h6.feed
-          = link_to "últimas notícias >>", "#"
+          últimas notícias >> 
+          %p= link_to "#{noticia.content}"
     .row.navbar
       .small-12.large-12.columns
         %h6.subheader

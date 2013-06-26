@@ -1,5 +1,6 @@
 class StaticPagesController < ApplicationController
   def filme
+    @noticia = Post.last
   end
 
   def personagem

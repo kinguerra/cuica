@@ -1,5 +1,10 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
+  
+  def noticia
+    @noticia = Post.first && Post.last
+  end
+  helper_method :noticia
 
   private
 
