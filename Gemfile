@@ -5,7 +5,6 @@ gem 'rails', '3.2.13'
 gem 'jquery-rails', '2.0.2'
 gem 'haml-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
-gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
