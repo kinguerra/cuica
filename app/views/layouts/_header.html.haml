@@ -20,9 +20,10 @@
       .large-4.small-4.columns
         .docdoma= image_tag('docdoma.png')
       .large-12.small-12.columns
-        %h6.feed
-          últimas notícias >> 
-          / %p= link_to "#{noticia.content}"
+        - if @noticia
+          %h6.feed
+            últimas notícias >>
+            %p= link_to @noticia.content, post_path(@noticia)
     .row.navbar
       .small-12.large-12.columns
         %h6.subheader
