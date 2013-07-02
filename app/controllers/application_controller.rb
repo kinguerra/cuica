@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   
   def noticia
-    @noticia = Post.first && Post.last
+    @noticia = Post.last
   end
   helper_method :noticia
 

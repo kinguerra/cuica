@@ -3,9 +3,9 @@
     %h1 Log In
     = form_tag sessions_path do
       .field
-        = label_tag :email
+        = label_tag :name
         %br/
-        = text_field_tag :email, params[:email]
+        = text_field_tag :name, params[:name]
       .field
         = label_tag :password
         %br/

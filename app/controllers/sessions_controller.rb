@@ -3,12 +3,12 @@ class SessionsController < ApplicationController
   end
 
   def create
-    admin = Admin.find_by_email(params[:email])
+    admin = Admin.find_by_name(params[:name])
     if admin && admin.authenticate(params[:password])
       session[:admin_id] = admin.id
       redirect_to root_url, notice: "Logged in!"
     else
-      flash.now[:error] = "Email or password is invalid"
+      flash.now[:error] = "Name or password is invalid"
       render "new"
     end
   end
