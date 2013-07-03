@@ -1,0 +1,88 @@
+/* Header*/
+.logo {
+  padding-top: 300px;
+}
+.desc {
+  padding-top: 15px;
+}
+
+.header { 
+  background-image: url("cuica_back.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: 5% 80%;
+  height: 400px;
+  padding-top: 30px;
+}
+
+.navbar {
+  padding-top: 440px;
+  padding-left: 15px;
+  ul {
+    li {
+      margin: 20px;
+      a {
+        padding: 10px 8px 5px 15px;
+      }
+      :hover {
+        background-color: red;
+      }
+    }
+  }
+}
+
+ol.side-nav {
+  background-color: #EDEBD7;
+  width: 120%;
+  li {
+    margin: 5px 0px 5px 30px;
+    a {
+      padding: 5px
+    }
+    :hover {
+      background-color: #00adef;
+    }
+  }
+}
+
+.feed {
+  padding-top: 80px;
+}
+
+/* Historia */
+
+.historia {
+  padding-top: 100px
+}
+
+.foto1 {
+  background-image: url('foto1.png');
+  background-repeat: no-repeat;
+  background-size: 65%;
+}
+
+.coluna1 {
+  background-color: #EDEBD7;
+  opacity: 0.8;
+    p {
+      margin: 80px 20px 80px 30px;
+    }
+}
+.festival {
+  font-family: "Special Elite", "Courier New", Courier;
+  color: #eeecd8 !important;
+  p {
+    background: url("festival-leaves.png") no-repeat 0 4px;
+    text-align: center;
+    font-size: 8px;
+    padding: 0 30px;
+    width: 149px;
+    min-height: 74px;
+    display:inline-block; 
+    vertical-align: middle;
+  }
+  span { 
+  font-family: Verdana;
+  font-size: 7px;
+  }
+}

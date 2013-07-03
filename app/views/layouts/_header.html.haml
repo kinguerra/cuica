@@ -1,0 +1,41 @@
+.row
+  .header
+    .large-2.columns
+      %nav#menu{:role => "navigation"}
+        %ol.side-nav
+          %h5.subheader
+            %li.main.nav-item= link_to "A HISTÓRIA", '#historia'
+            %li.main.nav-item= link_to "A PRODUÇÃO", '#producao'
+            %li.main.nav-item= link_to "OS DIRETORES", '#diretores'
+            %li.main.nav-item= link_to "A EQUIPE", '#equipe'
+            %li.main.nav-item= link_to "A DOCDOMA", '#docdoma'
+    .large-6.columns.logo
+      = image_tag('cuica_logo.png')
+      .large-8.columns.desc
+        = image_tag('cuica_desc.png')
+    .large-4.columns
+      .large-8.small-8.columns
+        %h3{"data-reveal-id" => "trailer"}
+          =link_to "Assista o Trailer", '#'
+      .large-4.small-4.columns
+        .docdoma= image_tag('docdoma.png')
+      .large-12.small-12.columns
+        - if @noticia
+          %h6.feed
+            últimas notícias >>
+            %p= link_to @noticia.content, post_path(@noticia)
+    .row.navbar
+      .small-12.large-12.columns
+        %h6.subheader
+          %ul.inline-list
+            %li
+              =link_to "FILME", root_path
+            %li
+              =link_to "NOTÍCIAS", '/posts'
+            %li
+              =link_to "PERSONAGEM", '/personagem'
+            %li
+              =link_to "BLOG", '#'
+            - if current_admin
+              %li 
+                = link_to "#{current_admin.name} | Sair", logout_path
