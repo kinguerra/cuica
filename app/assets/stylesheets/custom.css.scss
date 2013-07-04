@@ -86,3 +86,13 @@ ol.side-nav {
   font-size: 7px;
   }
 }
+
+#directors {
+  .active .content, .active .title {
+    border-top: 1px solid #4a3b34;
+  }
+  .active .title {
+    border-left: 1px solid #4a3b34;
+    border-right: 1px solid #4a3b34;
+  }
+}

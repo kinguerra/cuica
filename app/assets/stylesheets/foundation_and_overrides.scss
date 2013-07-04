@@ -799,19 +799,19 @@ $paragraph-line-height: 2;
 
 // These style the titles
 // $section-title-color: #333;
-// $section-title-bg: #efefef;
+$section-title-bg: #EDEBD7;
 // $section-title-bg-active: darken($section-title-bg, $section-function-factor);
-// $section-title-bg-active-tabs: #fff;
+$section-title-bg-active-tabs: #EDEBD7;
 
 // Want to control border size, here ya go!
-// $section-border-size: 1px;
+$section-border-size: 0;
 // $section-border-style: solid;
-// $section-border-color: #ccc;
+$section-border-color: #4a3b34;
 
 // Control the color of the background and some size options
-// $section-content-bg: #fff;
+$section-content-bg: #EDEBD7;
 // $section-vertical-nav-min-width: emCalc(200px);
-// $section-bottom-margin: emCalc(20px);
+$section-bottom-margin: emCalc(10px);
 
 //
 // Side Nav Variables
