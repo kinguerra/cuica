@@ -5,6 +5,7 @@ Cuica::Application.routes.draw do
   resources :admins
   resources :sessions
   resources :posts
+  resources :cinemas
 
   root :to => 'static_pages#filme'
 
