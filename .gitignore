@@ -16,4 +16,4 @@
 
 db/schema.rb
 
-app/assets/.DS_Store
+.DS_Store
