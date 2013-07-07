@@ -12,7 +12,11 @@
   .large-3.columns
     .row
       .large-12.columns
-        %h4 Próximas exibições
+        - if @exibicao
+          %h4.feed
+            Próximas exibições
+            %p
+              %span= @exibicao.date
       .large-12.columns
         - if @noticia
           %h4.feed
