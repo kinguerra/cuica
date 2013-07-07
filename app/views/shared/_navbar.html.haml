@@ -1,17 +1,21 @@
 .contain-to-grid{"data-magellan-expedition" => "fixed"}
   %h6.subheader
     %ul.inline-list
+      %li.main.nav-item{"data-magellan-arrival" => "trailer"}
+        = link_to "Início", root_path
       %li.main.nav-item{"data-magellan-arrival" => "historia"}
-        = link_to "A HISTÓRIA", '#historia'
+        = link_to "Filme", '#historia'
+      %li.main.nav-item{"data-magellan-arrival" => "personagem"}
+        =link_to "PERSONAGEM", '#personagem'
       %li.main.nav-item{"data-magellan-arrival" => "producao"}
         = link_to "A PRODUÇÃO", '#producao'
-      %li.main.nav-item= link_to "OS DIRETORES", '#diretores'
-      %li.main.nav-item= link_to "A EQUIPE", '#equipe'
-      %li.main.nav-item= link_to "A DOCDOMA", '#docdoma'
-      %li=link_to "FILME", root_path
+      %li.main.nav-item{"data-magellan-arrival" => "diretores"}
+        = link_to "OS DIRETORES", '#diretores'
+      %li.main.nav-item{"data-magellan-arrival" => "docdoma"}
+        = link_to "A DOCDOMA", '#docdoma'
+      %li.main.nav-item{"data-magellan-arrival" => "equipe"}
+        = link_to "A EQUIPE", '#equipe'
       %li=link_to "NOTÍCIAS", '/posts'
-      %li=link_to "PERSONAGEM", '/personagem'
-      %li=link_to "BLOG", '#'
       - if current_admin
         %li 
           = link_to "#{current_admin.name} | Sair", logout_path

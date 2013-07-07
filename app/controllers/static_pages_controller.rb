@@ -3,8 +3,8 @@ class StaticPagesController < ApplicationController
     @noticia = Post.last
   end
 
-  def personagem
-  end
+  # def personagem
+  # end
 
   def equipe
   end
