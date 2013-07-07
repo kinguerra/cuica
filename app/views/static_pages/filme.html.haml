@@ -1,15 +1,19 @@
-#main{:role => "main"}
-  #historia.page-panel
+%section#trailer
+  = render 'trailer'
+%section
+  = render 'shared/navbar'
+%section#historia
   = render 'historia'
-#main{:role => "main"}
-  #producao.page-panel
-    = render 'producao'
-= render 'diretores-docdama'
-#main{:role => "main"}
-  #equipe.page-panel
-    .row
-      .large-12.columns
-        %h3.subheader{"data-reveal-id" => "fichaEquipe"}
-          = link_to "Equipe !!", '#' 
-        %br
-          %small> (Clique para abrir)
+%section#festivais
+  = render 'festivais'
+%section#producao
+  = render 'producao'
+%section#diretores-docdoma
+= render 'diretores-docdoma'
+#equipe
+  .row
+    .large-12.columns
+      %h3.subheader{"data-reveal-id" => "fichaEquipe"}
+        = link_to "Equipe !!", '#' 
+      %br
+        %small> (Clique para abrir)

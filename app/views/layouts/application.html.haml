@@ -29,21 +29,32 @@
     .notice= flash[:notice]
   - if flash[:alert]
     .alert= flash[:alert]
+  
+  / Facebook
+  #fb-root
+  :javascript
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=157977650891087";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 
-  = render 'layouts/header'
+  = render 'layouts/header'    
   = yield
   = render 'layouts/footer'
 
   = javascript_include_tag "application"
 
-  #trailer.reveal-modal.large
-    .flex-video
-      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "720", :src => "http://www.youtube.com/embed/dekX4o6UUHI?rel=0", :width => "1280"}
-  %a.close-reveal-modal ×
+  / #trailer.reveal-modal.large
+  /   .flex-video
+  /     %iframe{:allowfullscreen => "", :frameborder => "0", :height => "720", :src => "http://www.youtube.com/embed/dekX4o6UUHI?rel=0", :width => "1280"}
+  /   %a.close-reveal-modal ×
 
 
   / Check for Zepto support, load jQuery if necessary
   :javascript
     document.write('<script src=/js/vendor/'
       + ('__proto__' in {} ? 'zepto' : 'jquery')
-      + '.js></script>');
+      + '.js><\/script>');

@@ -1,6 +1,7 @@
 // Required global settings and mixins for Foundation
 @import "foundation/foundation-global";
-@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+@import url("http://fonts.googleapis.com/css?family=Special+Elite");
+@import url("http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic");
 
 // Settings file to override Foundation variables
 
@@ -18,7 +19,7 @@
 // We use these to control various global styles
 $body-bg: #EDEBD7;
 // $body-font-color: #222;
-$body-font-family: "Courier New", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Noto Serif", "Courier New", serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -89,17 +90,17 @@ $row-width: 58em;
 $header-font-family: "Special Elite", "Courier New", Courier, Arial;
 // $header-font-weight: bold;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: #000;
 // $header-line-height: 1.4;
-// $header-top-margin: .2em;
-// $header-bottom-margin: .5em;
+$header-top-margin: 1.2em;
+$header-bottom-margin: .9em;
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
 // $h1-font-size: emCalc(44px);
 // $h2-font-size: emCalc(37px);
 // $h3-font-size: emCalc(27px);
-// $h4-font-size: emCalc(23px);
+$h4-font-size: emCalc(28px);
 // $h5-font-size: emCalc(18px);
 // $h6-font-size: 1em;
 
@@ -116,9 +117,9 @@ $header-font-family: "Special Elite", "Courier New", Courier, Arial;
 
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
-// $paragraph-font-weight: normal;
-$paragraph-font-size: 0.9em;
-$paragraph-line-height: 2;
+$paragraph-font-weight: bold;
+$paragraph-font-size: 0.7em;
+$paragraph-line-height: 1.2;
 // $paragraph-margin-bottom: emCalc(20px);
 // $paragraph-aside-font-size: emCalc(14px);
 // $paragraph-aside-line-height: 1.35;
@@ -799,7 +800,7 @@ $paragraph-line-height: 2;
 
 // These style the titles
 // $section-title-color: #333;
-$section-title-bg: #EDEBD7;
+$section-title-bg: #a2b480;
 // $section-title-bg-active: darken($section-title-bg, $section-function-factor);
 $section-title-bg-active-tabs: #EDEBD7;
 

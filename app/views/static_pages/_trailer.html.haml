@@ -1,0 +1,23 @@
+.row
+  .large-7.columns.large-offset-1.r1
+    .flex-video.widescreen
+      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "720", :src => "http://www.youtube.com/embed/dekX4o6UUHI?rel=0", :width => "1280"}
+    .row
+      .large-7.columns
+        %p 
+          Na idílica Salvador dos anos 40 e 50, o poeta popular atenta contra o pudor e brada contra a hipocrisia, revela em praça pública segredos de alcova e trapaças de ricos marreteiros. 
+      .large-5.columns
+        %p
+          Ele é a versão popular do boca de brasa, o Gregório de Mattos sem gramática. É um herói e um anti-herói. O maior comunicador que a Bahia já teve. É um performer antes de Salvador virar metrópole.
+  .large-3.columns
+    .row
+      .large-12.columns
+        %h4 Próximas exibições
+      .large-12.columns
+        - if @noticia
+          %h4.feed
+            A Sair
+            %p
+              %span= @noticia.created_at.strftime("%d %b. %Y")
+              = link_to @noticia.content, post_path(@noticia)
+  .large-1.columns
