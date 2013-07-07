@@ -12,12 +12,15 @@
   .large-3.columns
     .row
       .large-12.columns
-        %h4 Próximas exibições
+        - if @cinema
+          %h4 Próximas exibições
+          %p content
+
       .large-12.columns
         - if @noticia
-          %h4.feed
-            A Sair
-            %p
-              %span= @noticia.created_at.strftime("%d %b. %Y")
-              = link_to @noticia.content, post_path(@noticia)
+          %h4.feed A Sair
+          %p
+            %span= @noticia.created_at.strftime("%d %b. %Y")
+            = link_to @noticia.content, post_path(@noticia)
+        = link_to "Adicionar notícia", new_post_path
   .large-1.columns
