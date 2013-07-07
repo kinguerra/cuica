@@ -1,28 +1,14 @@
-/* Header*/
-.logo {
-  padding-top: 300px;
-}
-.desc {
-  padding-top: 15px;
+p {
+  text-align:justify;
+  text-justify:inter-word;
 }
 
-.header { 
-  background-image: url("cuica_back.png");
-  background-size: 75%;
-  background-repeat: no-repeat;
-  background-position: 5% 80%;
-  height: 400px;
-  padding-top: 30px;
-}
+/* Header*/
 
 .navbar {
-  padding-top: 440px;
-  padding-left: 15px;
   ul {
     li {
-      margin: 20px;
       a {
-        padding: 10px 8px 5px 15px;
       }
       :hover {
         background-color: red;
@@ -35,10 +21,8 @@ ol.side-nav {
   background-color: #EDEBD7;
   width: 120%;
   li {
-    margin: 5px 0px 5px 30px;
     a {
-      padding: 5px
-    }
+  }
     :hover {
       background-color: #00adef;
     }
@@ -46,25 +30,83 @@ ol.side-nav {
 }
 
 .feed {
-  padding-top: 80px;
 }
 
 /* Historia */
 
+.historia, .festivais, .producao {
+  margin: 0;  
+  padding: 60px 0 !important;
+}
+
 .historia {
-  padding-top: 100px
+  padding: 50px 0;
+  background: #e3c5aa url('bg-pink.jpg');
 }
 
-.foto1 {
-  background-image: url('foto1.png');
-  background-repeat: no-repeat;
-  background-size: 65%;
+.producao {
+  background: #a2b480;
 }
 
-.coluna1 {
-  background-color: #EDEBD7;
-  opacity: 0.8;
-    p {
-      margin: 80px 20px 80px 30px;
-    }
+.festivais {
+  font-family: "Special Elite", "Courier New", Courier;
+  color: #eeecd8 !important;
+  p {
+    background: url("festival-leaves.png") no-repeat 0 4px;
+    text-align: center;
+    font-size: 8px;
+    padding: 0 30px;
+    width: 149px;
+    min-height: 74px;
+    display:inline-block; 
+    vertical-align: middle;
+  }
+  span { 
+  font-family: Verdana;
+  font-size: 7px;
+  }
+}
+
+#directors {
+  > .section-container.tabs {
+    margin-top: -30px !important;
+  }
+  .active .content, .active .title {
+    border-top: 1px solid #4a3b34;
+  }
+  .active .title {
+    border-left: 1px solid #4a3b34;
+    border-right: 1px solid #4a3b34;
+    background-color: #edebd7;
+  }
+}
+
+.main.nav-item.active {
+  background-color: green;
+}
+
+.center {
+  text-align: center;
+}
+
+.r1 {
+  -webkit-transform:rotate(0.8deg);
+  -moz-transform:rotate(0.8deg);
+  -o-transform:rotate(0.8deg);
+  -ms-transform:rotate(0.8deg);
+  rotation:0.8deg;
+}
+.r2 {
+  -webkit-transform:rotate(1.3deg);
+  -moz-transform:rotate(1.3deg);
+  -o-transform:rotate(1.3deg);
+  -ms-transform:rotate(1.3deg);
+  rotation:1.3deg;
+}
+.r-1 {
+  -webkit-transform:rotate(-1.1deg);
+  -moz-transform:rotate(-1.1deg);
+  -o-transform:rotate(-1.1deg);
+  -ms-transform:rotate(-1.1deg);
+  rotation:-1.1deg;
 }
