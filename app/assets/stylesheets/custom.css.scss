@@ -39,14 +39,26 @@ ol.side-nav {
   padding: 60px 0 !important;
 }
 
-.historia {
+.historia{
   padding: 50px 0;
   background: #e3c5aa url('bg-pink.jpg');
+  p::selection {
+    background: #ffb7b7; /* Safari */
+  }
+  p::-moz-selection {
+    background: #ffb7b7; /* Firefox */
+  }
 }
 
 .producao {
   background: #a2b480;
   border-bottom: 1px solid #000;
+  p::selection {
+    background: #29a331; /* Safari */
+  }
+  p::-moz-selection {
+    background: #29a331; /* Firefox */
+  }
 }
 
 .festivais {
