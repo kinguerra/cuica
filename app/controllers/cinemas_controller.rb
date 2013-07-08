@@ -70,9 +70,4 @@ class CinemasController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-  def exibir
-    @exibir = Cinema.first
-  end
-  helper_method :exibir
 end

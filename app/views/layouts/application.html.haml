@@ -45,16 +45,15 @@
   = yield
   = render 'layouts/footer'
 
-  = javascript_include_tag "application"
-
   / #trailer.reveal-modal.large
   /   .flex-video
   /     %iframe{:allowfullscreen => "", :frameborder => "0", :height => "720", :src => "http://www.youtube.com/embed/dekX4o6UUHI?rel=0", :width => "1280"}
   /   %a.close-reveal-modal ×
 
 
-  / Check for Zepto support, load jQuery if necessary
+  = javascript_include_tag :application
   :javascript
     document.write('<script src=/js/vendor/'
       + ('__proto__' in {} ? 'zepto' : 'jquery')
       + '.js><\/script>');
+  / Check for Zepto support, load jQuery if necessary
