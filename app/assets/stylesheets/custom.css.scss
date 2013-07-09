@@ -25,6 +25,9 @@ p {
   margin-bottom: 40%;
 }
 
+.alert-box {
+  margin-bottom: 0px !important;
+}
 .navbar {
   background-color: #f0c6a2 !important;
 }
@@ -185,6 +188,12 @@ ol.side-nav {
     margin-top: 50px;
     padding: 10px;
     width: 130%
+  }
+}
+#exibir {
+  background-color: #7eb361;
+  .close-reveal-modal {
+    color: white;
   }
 }
 
