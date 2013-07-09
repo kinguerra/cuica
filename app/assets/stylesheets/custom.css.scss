@@ -72,6 +72,13 @@ p {
   background-color: #ea4221;
   color: #f0c6a2;
 }
+@media only screen and (orientation: portrait) { 
+  .mobile {
+    font-size: .8em;
+    padding: 0 !important;
+  }
+}
+
 
 .navbar {
   background-color: #f0c6a2 !important;
@@ -81,7 +88,8 @@ p {
   > li {
     margin: 0.375em !important;
     padding: 5px !important;
-}}
+  }
+}
 
 ol.side-nav {
   background-color: #EDEBD7;

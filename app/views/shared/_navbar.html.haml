@@ -1,21 +1,21 @@
 .contain-to-grid{"data-magellan-expedition" => "fixed"}
   .row
-    .large-10.large-centered.columns
+    .large-10.large-centered.columns.mobile
       %ul.inline-list
         %li.main.nav-item.r2{"data-magellan-arrival" => "historia"}
           = link_to "FILME", '#historia'
+        %li.main.nav-item.opacity7.hide-for-small{"data-magellan-arrival" => "noticias"}
+          =link_to "NOTÍCIAS", '/posts'
         %li.main.nav-item.r1.opacity9{"data-magellan-arrival" => "personagem"}
           =link_to "PERSONAGEM", '#personagem'
-        %li.main.nav-item{"data-magellan-arrival" => "producao"}
+        %li.main.nav-item.hide-for-small{"data-magellan-arrival" => "producao"}
           = link_to "A PRODUÇÃO", '#producao'
         %li.main.nav-item{"data-magellan-arrival" => "diretores"}
           = link_to "OS DIRETORES", '#diretores'
         %li.main.nav-item.r-1.opacity8{"data-magellan-arrival" => "docdoma"}
           = link_to "A DOCDOMA", '#docdoma'
-        %li.main.nav-item{"data-magellan-arrival" => "equipe"}
-          = link_to "A EQUIPE", '#equipe'
-        %li.main.nav-item.opacity7{"data-magellan-arrival" => "equipe"}
-          =link_to "NOTÍCIAS", '/posts'
-        %li#fbpage= link_to "f", "https://www.facebook.com/cuicadesantoamaro"
-        %li#blog= link_to "Blog", "http://cuicadesantoamaro.blogspot.com.br"
+        / %li.main.nav-item{"data-magellan-arrival" => "equipe"}
+        /   = link_to "A EQUIPE", '#equipe'
+        %li#fbpage.hide-for-small= link_to "f", "https://www.facebook.com/cuicadesantoamaro"
+        %li#blog.hide-for-small= link_to "Blog", "http://cuicadesantoamaro.blogspot.com.br"
             
