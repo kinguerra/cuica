@@ -7,4 +7,4 @@
           %h6= link_to post.content, posts_path
           %p Posted #{time_ago_in_words(post.created_at)} ago.
           %hr
-          .fb-like{"data-font" => "segoe ui", "data-href" => post_path(post), "data-layout" => "box_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "60"}
+          .fb-like{"data-font" => "segoe ui", "data-href" => "#{post_path(post)}", "data-layout" => "box_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "60"}
