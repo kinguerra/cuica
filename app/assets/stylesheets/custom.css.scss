@@ -19,8 +19,7 @@ p {
 /* Header*/
 .header {
   background: url("cuica_header.jpg") no-repeat;
-  padding-bottom: 10%;
-  background-size: 100%;
+  background-size: cover;
   background-position-y: 5%;
 }
 
@@ -242,18 +241,54 @@ ol.side-nav {
     }
 }
 
+/* Diretores */
+
 .diretores {
   padding: 3% 0% 3% 0%;
   background-color: #bb3c3e;
-  h2, h4 {
+  h2, h3, h4 {
     color: #411912
   }
+  h2 {
+    font-size: 2.2em;
+    font-weight: bold;
+  }
+  h3 {
+    margin: 42px 0 7px;
+    line-height: 1em;
+    small {
+      font-size: 13px;
+      display: block;
+      margin: 11px 0 20px;
+    }
+  }
+  .josias {
+    font-size: 1.2em;
+  }
+  p::selection {
+    background: red; /* Safari */
+  }
+  p::-moz-selection {
+    background: red; /* Firefox */
+  }
+  .destaq2 {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
   img {
-    margin-top: 50px;
+    margin-top: 25px;
     padding: 10px;
     width: 130%
   }
+  hr {
+    border: 0;
+    background-color: rgb(90, 30, 19);
+    height: 4px;
+    margin-bottom: 0;
+  }
 }
+
+
 #exibir {
   background-color: #7eb361;
   .close-reveal-modal {
