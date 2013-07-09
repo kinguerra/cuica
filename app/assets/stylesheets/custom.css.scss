@@ -1,8 +1,11 @@
 .futura {
   font-family: "futura-pt-1","futura-pt-2",sans-serif;
 }
-.futura {
-  font-family: Times,"Times New Roman",serif;
+.times {
+  font-family: "Times","Times New Roman",serif;
+}
+.typewriter {
+  font-family: "Special Elite", "Courier New", Courier, Arial;
 }
 
 .uppercase {
@@ -67,6 +70,11 @@ ol.side-nav {
     color: #353556;
     text-align:justify;
     text-justify:inter-word;
+  }
+  h2 {
+    font-size: 3.7em;
+    font-weight: 500;
+    margin: 0;
   }
   p::selection {
     background: #ffb7b7; /* Safari */
