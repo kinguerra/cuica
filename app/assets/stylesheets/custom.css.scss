@@ -41,7 +41,9 @@ ol.side-nav {
   }
 }
 
-.feed {
+/* Header Admin */
+.admin {
+  margin: 0 !important;
 }
 
 /* Historia */
@@ -80,7 +82,6 @@ ol.side-nav {
 
 .producao {
   background: #d5c5a5;
-  border-bottom: 1px solid #000;
   h2, p, small {
     color: #172171;
   }
