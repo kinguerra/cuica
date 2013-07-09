@@ -2,34 +2,6 @@
   font-family: "futura-pt-1","futura-pt-2",sans-serif;
 }
 
-.producao {
-  h2 {
-    max-width: 300px;
-    font-size: 1.2em;
-    font-weight: 500;
-    transform:scale(0.9, 1.5); /* W3C */
-    -webkit-transform:scale(0.9, 1.5); /* Safari and Chrome */
-    -moz-transform:scale(0.9, 1.5); /* Firefox */
-    -ms-transform:scale(0.9, 1.5); /* IE 9 */
-    -o-transform:scale(0.9, 1.5); /* Opera */
-
-    -webkit-transform-origin: 0 20px; /* h-offset, v-offset */
-    -moz-transform-origin: 0 20px;
-    -o-transform-origin: 0 20px;
-    -ms-transform-origin: 0 20px;
-    transform-origin: 0 20px;
-    letter-spacing: 0.1em;
-    span.prod1 {
-      font-weight: 600;
-      transform:scale(1.5,1); /* W3C */
-      -webkit-transform:scale(1.5,1); /* Safari and Chrome */
-      -moz-transform:scale(1.5,1); /* Firefox */
-      -ms-transform:scale(1.5,1); /* IE 9 */
-      -o-transform:scale(1.5,1); /* Opera */
-    }
-  }
-}
-
 .uppercase {
   text-transform: uppercase; 
 }
@@ -80,8 +52,14 @@ ol.side-nav {
 }
 
 .historia{
-  padding: 50px 0;
-  background: #e3c5aa url('bg-pink.jpg');
+  padding: 0 !important;
+  background: #e3c5aa;
+  color: #353556;
+  h2, h5, p {
+    color: #353556;
+    text-align:justify;
+    text-justify:inter-word;
+  }
   p::selection {
     background: #ffb7b7; /* Safari */
   }
@@ -98,14 +76,51 @@ ol.side-nav {
   background-size: cover;
 }
 
+/* Producao */
+
 .producao {
-  background: #a2b480;
+  background: #d5c5a5;
   border-bottom: 1px solid #000;
+  h2, p {
+    color: #172171;
+  }
   p::selection {
     background: #29a331; /* Safari */
   }
   p::-moz-selection {
     background: #29a331; /* Firefox */
+  }
+
+  h2 {
+    max-width: 300px;
+    font-size: 1.2em;
+    font-weight: 500;
+    transform:scale(0.9, 1.5); /* W3C */
+    -webkit-transform:scale(0.9, 1.5); /* Safari and Chrome */
+    -moz-transform:scale(0.9, 1.5); /* Firefox */
+    -ms-transform:scale(0.9, 1.5); /* IE 9 */
+    -o-transform:scale(0.9, 1.5); /* Opera */
+
+    -webkit-transform-origin: 0 20px; /* h-offset, v-offset */
+    -moz-transform-origin: 0 20px;
+    -o-transform-origin: 0 20px;
+    -ms-transform-origin: 0 20px;
+    transform-origin: 0 20px;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid #172171;
+    margin-bottom: 25px;
+    span.prod1 {
+      font-weight: 600;
+      transform:scale(1.5,1); /* W3C */
+      -webkit-transform:scale(1.5,1); /* Safari and Chrome */
+      -moz-transform:scale(1.5,1); /* Firefox */
+      -ms-transform:scale(1.5,1); /* IE 9 */
+      -o-transform:scale(1.5,1); /* Opera */
+    }
+  }
+  img {
+    border: 3px solid #373c79;
+    padding: 2px;
   }
 }
 
