@@ -33,18 +33,19 @@
 
 %body
   = render 'shared/admin-navbar'
-  - if flash[:error]
-    .row
-      .small-10.columns.large-centered.top10
-        .error.alert-box.alert= flash[:error]
-  - if flash[:notice]
-    .row
-      .small-10.columns.large-centered.top10
-        .notice.alert-box.success= flash[:notice]
-  - if flash[:alert]
-    .row
-      .small-10.columns.large-centered.top10
-        .alert.alert-box= flash[:alert]
+  .alerts
+    - if flash[:error]
+      .row
+        .small-10.columns.large-centered.top10
+          .error.alert-box.alert= flash[:error]
+    - if flash[:notice]
+      .row
+        .small-10.columns.large-centered.top10
+          .notice.alert-box.success= flash[:notice]
+    - if flash[:alert]
+      .row
+        .small-10.columns.large-centered.top10
+          .alert.alert-box= flash[:alert]
   
   / Facebook
   #fb-root

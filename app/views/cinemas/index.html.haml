@@ -1,13 +1,16 @@
 .row
-  .small-5.columns
-    %h3 Próximas Exibições
-  .small-7.columns
+  .small-6.push-3.columns
+    %h2.futura Próximas Exibições
     - @cinemas.each do |cinema|
-      %h6
-        %span= cinema.place
-        %p= cinema.date
-      - if current_admin
-        %small
-          = link_to 'Show', cinema
-          = link_to 'Edit', edit_cinema_path(cinema)
-          = link_to 'Destroy', cinema, method: :delete, data: { confirm: 'Are you sure?' }
+      .panel.large-centered
+        %h6
+          %span.times
+            = cinema.place
+          %br
+            = cinema.date.strftime("%d %B %Y") 
+            = cinema.date.strftime("às %H:%M")
+        - if current_admin
+          %small
+            = link_to 'Visualizar', cinema
+            = link_to 'Editar', edit_cinema_path(cinema)
+            = link_to 'Deletar', cinema, method: :delete, data: { confirm: 'Tem certeza?' }
