@@ -5,7 +5,7 @@
   font-family: "Times","Times New Roman",serif;
 }
 .typewriter {
-  font-family: "Special Elite", "Courier New", Courier, Arial;
+  font-family: "Special Elite", "Courier New", Courier, Times;
 }
 
 .uppercase {
@@ -34,9 +34,55 @@ p {
 .alert-box {
   margin-bottom: 0px !important;
 }
+
+/* navbar */
+
+.main.nav-item.active {
+  background-color: #353556;
+  opacity: .8;
+  a {
+    color: #e3c5aa;
+    -webkit-transform:rotate(1deg);
+    -moz-transform:rotate(1deg);
+    -o-transform:rotate(1deg);
+    -ms-transform:rotate(1deg);
+    rotation:1deg;
+  }
+}
+
+.subheader {
+  margin-bottom: -0.8em !important;
+}
+
+[data-magellan-expedition] {
+  background-color: #e3c5aa !important;
+  font-family: "Special Elite", "Courier New", Courier, Times;
+  font-size: 1.3em;
+  padding-bottom: 3px !important;
+}
+
+
+#fbpage a, #blog a {
+  background-color: #324991;
+  color: white;
+  font-weight: bolder;
+  padding: 2px 8px;
+}
+
+#blog a {
+  background-color: #ea4221;
+  color: #f0c6a2;
+}
+
 .navbar {
   background-color: #f0c6a2 !important;
 }
+.inline-list {
+  margin: 0 !important;
+  > li {
+    margin: 0.375em !important;
+    padding: 5px !important;
+}}
 
 ol.side-nav {
   background-color: #EDEBD7;
@@ -63,8 +109,15 @@ ol.side-nav {
 }
 
 .historia{
+  /* &:hover {
+  background-color: #f1e0b4;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s; Safari 
+  }*/
   padding: 0 !important;
   background: #e3c5aa;
+  /* transition: background-color 1s;
+  -webkit-transition: background-color 1s; Safari */
   color: #353556;
   h2, h5, p {
     color: #353556;
@@ -270,10 +323,6 @@ ol.side-nav {
     border: none;
     height: 11px;
   }
-}
-
-.main.nav-item.active {
-  background-color: green;
 }
 
 /* Helpers */

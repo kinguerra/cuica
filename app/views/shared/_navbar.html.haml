@@ -1,20 +1,21 @@
 .contain-to-grid{"data-magellan-expedition" => "fixed"}
-  %h6.subheader
-    %ul.inline-list
-      %li.main.nav-item{"data-magellan-arrival" => "trailer"}
-        = link_to "INÍCIO", root_path
-      %li.main.nav-item{"data-magellan-arrival" => "historia"}
-        = link_to "HISTÓRIA", '#historia'
-      %li.main.nav-item{"data-magellan-arrival" => "personagem"}
-        =link_to "PERSONAGEM", '#personagem'
-      %li.main.nav-item{"data-magellan-arrival" => "producao"}
-        = link_to "A PRODUÇÃO", '#producao'
-      %li.main.nav-item{"data-magellan-arrival" => "diretores"}
-        = link_to "OS DIRETORES", '#diretores'
-      %li.main.nav-item{"data-magellan-arrival" => "docdoma"}
-        = link_to "A DOCDOMA", '#docdoma'
-      %li.main.nav-item{"data-magellan-arrival" => "equipe"}
-        = link_to "A EQUIPE", '#equipe'
-      %li
-        =link_to "NOTÍCIAS", '/posts'
-        
+  .row
+    .large-10.large-centered.columns
+      %ul.inline-list
+        %li.main.nav-item{"data-magellan-arrival" => "historia"}
+          = link_to "FILME", '#historia'
+        %li.main.nav-item{"data-magellan-arrival" => "personagem"}
+          =link_to "PERSONAGEM", '#personagem'
+        %li.main.nav-item{"data-magellan-arrival" => "producao"}
+          = link_to "A PRODUÇÃO", '#producao'
+        %li.main.nav-item{"data-magellan-arrival" => "diretores"}
+          = link_to "OS DIRETORES", '#diretores'
+        %li.main.nav-item{"data-magellan-arrival" => "docdoma"}
+          = link_to "A DOCDOMA", '#docdoma'
+        %li.main.nav-item{"data-magellan-arrival" => "equipe"}
+          = link_to "A EQUIPE", '#equipe'
+        %li.main.nav-item{"data-magellan-arrival" => "equipe"}
+          =link_to "NOTÍCIAS", '/posts'
+        %li#fbpage= link_to "f", "https://www.facebook.com/cuicadesantoamaro"
+        %li#blog= link_to "Blog", "http://cuicadesantoamaro.blogspot.com.br"
+            
