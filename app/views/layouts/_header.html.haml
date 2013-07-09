@@ -1,17 +1,25 @@
 .header
   .row
-    .small-12.columns.logo.center
+    .small-12.columns.logo.center.hide-for-small
       = link_to image_tag('cuica_logo.png'), root_path
-  .row
-    .large-7.columns.panel
-      %p Documentário sobra a vida e a obra do poeta popular, trovador-repórter e propagandista Cuíca de Santo Amaro, personagem baiano, controverso e irreverente.
-    .large-1.columns.panel.small-4.small-offset-1.center
-      = link_to "Trailer", "#"
-    .large-2.columns.panel.small-4.center
-      = link_to "Exibição", "#", "data-reveal-id" => "exibir"
-    .large-1.columns.small-3
-      .fb-like{"data-href" => "https://www.facebook.com/cuicadesantoamaro", "data-layout" => "box_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "450"}
-
+    .row
+      .large-12.columns
+        .row.panel
+          .small-12.columns.show-for-small
+          = link_to image_tag('cuica_logo-dark.png'), root_path
+          .large-8.columns.small-9
+            %p.typewriter.destaq2
+              Documentário sobra a vida e a obra do poeta popular, trovador-repórter e propagandista
+              %b.futura 
+                Cuíca de Santo Amaro
+              , personagem baiano, controverso e irreverente.
+          .large-1.columns.large-offset-2.small-2.icon.show-for-small
+            %a{:href => "#", "data-reveal-id" => "exibir"}
+              %i.foundicon-calendar
+          / .large-2.columns.panel.small-4.center
+          /   = link_to "Exibição", "#", "data-reveal-id" => "exibir"
+          .large-1.columns.small-3.pull-left
+            .fb-like{"data-href" => "https://www.facebook.com/cuicadesantoamaro", "data-layout" => "box_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "450"}
 
 #exibir.reveal-modal.r1
   .row
@@ -19,6 +27,11 @@
       - if @exibition
         %h4 Próximas Exibições
         - @exibition.each do |cinema|
-          %span= cinema.place
-          %p= cinema.date.strftime("%d %B %Y às %H:%M")
+          %ul.pricing-table
+            %li.title= cinema.date.strftime("%d %B %Y")
+            %li.price= cinema.date.strftime("%H:%M")
+            %li.description= cinema.place
+            %li.bullet-item Cidade
+            %li.cta-button
+              %a.button{:href => "#"} Mais informarções
   %a.close-reveal-modal ×
