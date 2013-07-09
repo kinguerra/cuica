@@ -33,12 +33,14 @@
 
 %body
   = render 'shared/admin-navbar'
-  - if flash[:error]
-    .error.alert-box.alert= flash[:error]
-  - if flash[:notice]
-    .notice.alert-box.success= flash[:notice]
-  - if flash[:alert]
-    .alert.alert-box= flash[:alert]
+  .row
+    .small-10.columns.large-centered.top10
+    - if flash[:error]
+      .error.alert-box.alert= flash[:error]
+    - if flash[:notice]
+      .notice.alert-box.success= flash[:notice]
+    - if flash[:alert]
+      .alert.alert-box= flash[:alert]
   
   / Facebook
   #fb-root
@@ -51,9 +53,11 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 
-  = render 'layouts/header'    
+  - if current_page?(root_url) 
+    = render 'layouts/header'    
   = yield
-  = render 'layouts/footer'
+  - if current_page?(root_url) 
+    = render 'layouts/footer'
 
 
   = javascript_include_tag :application
