@@ -1,15 +1,13 @@
 .row
-  .small-12.columns
-    - if current_admin
-      %h1.subheader.button.tiny.secondary= link_to "Criar nova exibição", new_cinema_path
   .small-5.columns
     %h3 Próximas Exibições
   .small-7.columns
     - @cinemas.each do |cinema|
       %h6
-        = cinema.place
-        = cinema.date
+        %span= cinema.place
+        %p= cinema.date
       - if current_admin
-        %p= link_to 'Show', cinema
-        %p= link_to 'Edit', edit_cinema_path(cinema)
-        %p= link_to 'Destroy', cinema, method: :delete, data: { confirm: 'Are you sure?' }
+        %small
+          = link_to 'Show', cinema
+          = link_to 'Edit', edit_cinema_path(cinema)
+          = link_to 'Destroy', cinema, method: :delete, data: { confirm: 'Are you sure?' }

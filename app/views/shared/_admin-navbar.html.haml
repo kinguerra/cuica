@@ -3,11 +3,13 @@
     %ul.title-area
       %li.divider
       %li.name
-        %h1 Área do Administrador
+        %h1= link_to "Área do Administrador", root_path
     %section.top-bar-section
       %ul.left
         %li.divider
         %li=link_to "Adicionar Notícia", new_post_path
+        %li=link_to "Editar Notícias", posts_path
         %li=link_to "Adicionar Exibição", new_cinema_path
+        %li=link_to "Editar Exibições", cinemas_path
         %li.divider
         %li= link_to "#{current_admin.name} | Sair", logout_path
