@@ -23,12 +23,13 @@
   %link{:href => "http://fonts.googleapis.com/css?family=Special+Elite", :rel => "stylesheet", :type => "text/css"}/
 
 %body
+  = render 'shared/admin-navbar'
   - if flash[:error]
-    .error= flash[:error]
+    .error.alert-box.alert= flash[:error]
   - if flash[:notice]
-    .notice= flash[:notice]
+    .notice.alert-box.success= flash[:notice]
   - if flash[:alert]
-    .alert= flash[:alert]
+    .alert.alert-box= flash[:alert]
   
   / Facebook
   #fb-root
@@ -44,11 +45,6 @@
   = render 'layouts/header'    
   = yield
   = render 'layouts/footer'
-
-  / #trailer.reveal-modal.large
-  /   .flex-video
-  /     %iframe{:allowfullscreen => "", :frameborder => "0", :height => "720", :src => "http://www.youtube.com/embed/dekX4o6UUHI?rel=0", :width => "1280"}
-  /   %a.close-reveal-modal ×
 
 
   = javascript_include_tag :application

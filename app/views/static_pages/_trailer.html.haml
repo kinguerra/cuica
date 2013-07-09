@@ -19,9 +19,6 @@
               %h5.subheader
                 = cinema.place
                 = cinema.date.strftime("%d %B %Y às %H:%M")
-          - if current_admin
-            %p.tiny.secondary.button
-              = link_to "Adicionar Exibição", new_cinema_path
       .large-12.columns
         - if @noticia
           .feed
@@ -30,7 +27,4 @@
               %h6
                 = link_to post.content, posts_path
                 %small Posted #{time_ago_in_words(post.created_at)} ago.
-              - if current_admin
-                %p.tiny.secondary.button
-                  = link_to "Adicionar notícia", new_post_path
   .large-1.columns

@@ -3,10 +3,4 @@ class StaticPagesController < ApplicationController
     @noticia = Post.all(:limit => 3)
     @exibition = Cinema.all(:limit => 3)
   end
-
-  # def personagem
-  # end
-
-  def equipe
-  end
 end

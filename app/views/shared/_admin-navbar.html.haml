@@ -1,0 +1,13 @@
+- if current_admin
+  %nav.top-bar{"data-options" => "is_hover:false"}
+    %ul.title-area
+      %li.divider
+      %li.name
+        %h1 Área do Administrador
+    %section.top-bar-section
+      %ul.left
+        %li.divider
+        %li=link_to "Adicionar Notícia", new_post_path
+        %li=link_to "Adicionar Exibição", new_cinema_path
+        %li.divider
+        %li= link_to "#{current_admin.name} | Sair", logout_path
