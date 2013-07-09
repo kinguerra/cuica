@@ -65,7 +65,7 @@ ol.side-nav {
   font-family: "Special Elite", "Courier New", Courier;
   background-color: #ee768f !important;
   border: none !important;
-  padding: 80px 0 !important;
+  padding: 60px 0 !important;
   b::selection , span::selection {
     background: #ff1310; /* Safari */
   }
@@ -78,6 +78,7 @@ ol.side-nav {
     text-align: center;
     font-size: 8px;
     padding: 0 30px;
+    margin: 30px 0; 
     width: 149px;
     min-height: 74px;
     display:inline-block; 
@@ -92,7 +93,8 @@ ol.side-nav {
   display: block;
   }
   .asterix {
-    margin-top: 32px;
+    margin-top: 62px;
+    font-size: 10px;
   }
 }
 
