@@ -81,7 +81,7 @@ ol.side-nav {
 .producao {
   background: #d5c5a5;
   border-bottom: 1px solid #000;
-  h2, p {
+  h2, p, small {
     color: #172171;
   }
   p::selection {
@@ -124,6 +124,8 @@ ol.side-nav {
   }
 }
 
+/* Festivais */
+
 .festivais {
   font-family: "Special Elite", "Courier New", Courier;
   background-color: #ee768f !important;
@@ -161,6 +163,7 @@ ol.side-nav {
   }
 }
 
+/* Notícias */
 .noticias {
   background: url("fundo-folhetos.jpg") no-repeat;
   background-size: 100%;
@@ -170,6 +173,8 @@ ol.side-nav {
       background-color: #268baa;
     }
 }
+
+/* Diretores */
 
 #directors {
   > .section-container.tabs {
@@ -182,6 +187,21 @@ ol.side-nav {
     border-left: 1px solid #4a3b34;
     border-right: 1px solid #4a3b34;
     background-color: #edebd7;
+  }
+}
+
+/* Personagem */
+
+.personagem {
+  background-color: #339966;
+  h2, p {
+    color: #112119;
+  }
+  h2 {
+    line-height: .1em;
+  }
+  p {
+    line-height: 1.5em;
   }
 }
 
