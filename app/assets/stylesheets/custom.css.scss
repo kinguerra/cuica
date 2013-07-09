@@ -4,17 +4,22 @@ p {
 }
 
 /* Header*/
+.header {
+  background: url("cuica_header.jpg") no-repeat;
+  padding-bottom: 10%;
+  background-size: 100%;
+  background-position-y: 5%;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:5%;
+  margin-bottom: 40%;
+}
 
 .navbar {
-  ul {
-    li {
-      a {
-      }
-      :hover {
-        background-color: red;
-      }
-    }
-  }
+  background-color: #f0c6a2 !important;
 }
 
 ol.side-nav {

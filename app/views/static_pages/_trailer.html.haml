@@ -1,30 +1,30 @@
-.row
-  .large-7.columns.large-offset-1.r1
-    .flex-video.widescreen
-      %iframe{:allowfullscreen => "", :frameborder => "0", :height => "720", :src => "http://www.youtube.com/embed/dekX4o6UUHI?rel=0", :width => "1280"}
-    .row
-      .large-7.columns
-        %p 
-          Na idílica Salvador dos anos 40 e 50, o poeta popular atenta contra o pudor e brada contra a hipocrisia, revela em praça pública segredos de alcova e trapaças de ricos marreteiros. 
-      .large-5.columns
-        %p
-          Ele é a versão popular do boca de brasa, o Gregório de Mattos sem gramática. É um herói e um anti-herói. O maior comunicador que a Bahia já teve. É um performer antes de Salvador virar metrópole.
-  .large-3.columns
-    .row
-      .large-12.columns
-        - if @exibition
-          .feed
-            %h4 Próximas Exibições
-            - @exibition.each do |cinema|
-              %h5.subheader
-                = cinema.place
-                = cinema.date.strftime("%d %B %Y às %H:%M")
-      .large-12.columns
-        - if @noticia
-          .feed
-            %h4 A Sair
-            - @noticia.each do |post|
-              %h6
-                = link_to post.content, posts_path
-                %small Posted #{time_ago_in_words(post.created_at)} ago.
-  .large-1.columns
+/ .row
+/   .large-7.columns.large-offset-1.r1
+/     .flex-video.widescreen
+/       %iframe{:allowfullscreen => "", :frameborder => "0", :height => "720", :src => "http://www.youtube.com/embed/dekX4o6UUHI?rel=0", :width => "1280"}
+/     .row
+/       .large-7.columns
+/         %p 
+/           Na idílica Salvador dos anos 40 e 50, o poeta popular atenta contra o pudor e brada contra a hipocrisia, revela em praça pública segredos de alcova e trapaças de ricos marreteiros. 
+/       .large-5.columns
+/         %p
+/           Ele é a versão popular do boca de brasa, o Gregório de Mattos sem gramática. É um herói e um anti-herói. O maior comunicador que a Bahia já teve. É um performer antes de Salvador virar metrópole.
+/   .large-3.columns
+/     .row
+/       .large-12.columns
+/         - if @exibition
+/           .feed
+/             %h4 Próximas Exibições
+/             - @exibition.each do |cinema|
+/               %h5.subheader
+/                 = cinema.place
+/                 = cinema.date.strftime("%d %B %Y às %H:%M")
+/       .large-12.columns
+/         - if @noticia
+/           .feed
+/             %h4 A Sair
+/             - @noticia.each do |post|
+/               %h6
+/                 = link_to post.content, posts_path
+/                 %small Posted #{time_ago_in_words(post.created_at)} ago.
+/   .large-1.columns

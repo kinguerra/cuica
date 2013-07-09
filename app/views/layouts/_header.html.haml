@@ -1,13 +1,13 @@
 .header
   .row
-    .large-10.columns.large-offset-1
-      .row
-        .small-10.columns.logo
-          = link_to image_tag('cuica_logo.png'), root_path
-          .row
-            .large-4.columns.small-7.desc
-              = image_tag('cuica_desc.png')
-            .large-6.columns.large-offset-2 Documentário em 35mm, 75 minutos * Brasil, 2012
-        .small-1.columns.fb-like{"data-href" => "https://www.facebook.com/cuicadesantoamaro", "data-layout" => "box_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "450"}
-        .small-1.columns
-          .docdoma= image_tag('docdoma.png')
+    .small-12.columns.logo.center
+      = link_to image_tag('cuica_logo.png'), root_path
+  .row
+    .large-5.columns.panel
+      Documentário sobra a vida e a obra do poeta popular, trovador-repórter e propagandista Cuíca de Santo Amaro, personagem baiano, controverso e irreverente.
+    .large-1.columns.large-offset-2.panel
+      = link_to "Trailer", "#"
+    .small-1.columns.right
+      .fb-like{"data-href" => "https://www.facebook.com/cuicadesantoamaro", "data-layout" => "box_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "450"}
+    .large-2.columns.panel.right
+      = link_to "Exibições", "#"

@@ -673,9 +673,9 @@ $paragraph-line-height: 1.2;
 //
 
 // We use these to control the background and border styles
- $panel-bg: darken(#4d4c4d, 5%);
+$panel-bg: #f0c6a2;
 // $panel-border-style: solid;
-// $panel-border-size: 1px;
+$panel-border-size: 0px;
 
 // We use this % to control how much we darken things on hover
 // $panel-function-factor: 10%;
