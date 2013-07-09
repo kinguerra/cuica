@@ -10,4 +10,15 @@
     .small-1.columns.right.center
       .fb-like{"data-href" => "https://www.facebook.com/cuicadesantoamaro", "data-layout" => "box_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "450"}
     .large-2.columns.panel.right
-      %a{"data-dropdown" => "contentDrop", :href => "#"} Exibição
+      = link_to "Exibição", "#", "data-reveal-id" => "exibir"
+
+
+#exibir.reveal-modal.r1
+  .row
+    .large-12.columns
+      - if @exibition
+        %h4 Próximas Exibições
+        - @exibition.each do |cinema|
+          %span= cinema.place
+          %p= cinema.date.strftime("%d %B %Y às %H:%M")
+  %a.close-reveal-modal ×
