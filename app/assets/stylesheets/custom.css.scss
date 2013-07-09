@@ -111,6 +111,16 @@ ol.side-nav {
   }
 }
 
+.noticias {
+  background: url("fundo-folhetos.jpg") no-repeat;
+  background-size: 100%;
+  padding: 18%;
+    .panel {
+      width: 150%;
+      background-color: #268baa;
+    }
+}
+
 #directors {
   > .section-container.tabs {
     margin-top: -29px !important;
