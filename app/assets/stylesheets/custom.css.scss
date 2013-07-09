@@ -174,19 +174,16 @@ ol.side-nav {
     }
 }
 
-/* Diretores */
-
-#directors {
-  > .section-container.tabs {
-    margin-top: -29px !important;
+.diretores {
+  padding: 3% 0% 3% 0%;
+  background-color: #bb3c3e;
+  h2, h4 {
+    color: #411912
   }
-  .active .content, .active .title {
-    border-top: 1px solid #4a3b34;
-  }
-  .active .title {
-    border-left: 1px solid #4a3b34;
-    border-right: 1px solid #4a3b34;
-    background-color: #edebd7;
+  img {
+    margin-top: 50px;
+    padding: 10px;
+    width: 130%
   }
 }
 
