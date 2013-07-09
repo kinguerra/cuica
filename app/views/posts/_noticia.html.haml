@@ -1,0 +1,15 @@
+%h4.feed
+  A Sair
+  %h6
+    / %span
+    / - @posts.each do |post|
+    /   = post.created_at.strftime("%d %b. %Y")
+    /   = link_to @post.content, post_path(@post) #posts_path
+    - @posts.each do |post|
+      .timestamp
+        #{time_ago_in_words(post.created_at)}
+      %p= post.content
+      
+  %h6
+    - if current_admin
+      = link_to "Adicionar notícia", new_post_path

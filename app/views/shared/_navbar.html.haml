@@ -16,6 +16,4 @@
       %li.main.nav-item{"data-magellan-arrival" => "equipe"}
         = link_to "A EQUIPE", '#equipe'
       %li=link_to "NOTÍCIAS", '/posts'
-      - if current_admin
-        %li 
-          = link_to "#{current_admin.name} | Sair", logout_path
+          

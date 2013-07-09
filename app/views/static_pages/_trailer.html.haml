@@ -12,16 +12,19 @@
   .large-3.columns
     .row
       .large-12.columns
-        - if @exibicao
-          %h4.feed
-            Próximas exibições
-            %p
-              %span= @exibicao.place
+        - if @exibition
+          .feed
+            %h4 Próximas Exibições
+            - @exibition.each do |cinema|
+              %h5.subheader
+                = cinema.place
+                = cinema.date.strftime("%d %B %Y às %H:%M")
       .large-12.columns
         - if @noticia
-          %h4.feed A Sair
-          %p
-            %span= @noticia.created_at.strftime("%d %b. %Y")
-            = link_to @noticia.content, post_path(@noticia)
-        = link_to "Adicionar notícia", new_post_path
+          .feed
+            %h4 A Sair
+            - @noticia.each do |post|
+              %h6
+                = link_to post.content, posts_path
+                %small Posted #{time_ago_in_words(post.created_at)} ago.
   .large-1.columns
