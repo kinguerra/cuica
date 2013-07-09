@@ -2,27 +2,26 @@
   .row
     .small-12.columns.logo.center.hide-for-small
       = link_to image_tag('cuica_logo.png'), root_path
-    .row
-      .large-12.columns
-        .row.panel
-          .small-12.columns.show-for-small
-            = link_to image_tag('cuica_logo-dark.png'), root_path
-          .small-12.columns.show-for-small
-            .flex-video.widescreen
-              %iframe{:allowfullscreen => "", :frameborder => "0", :height => "720", :src => "http://www.youtube.com/embed/dekX4o6UUHI?rel=0", :width => "1280"}
-          .large-8.columns.small-9
-            %p.typewriter.destaq2
-              Documentário sobra a vida e a obra do poeta popular, trovador-repórter e propagandista
-              %b.futura 
-                Cuíca de Santo Amaro
-              , personagem baiano, controverso e irreverente.
-          .large-1.columns.large-offset-2.small-2.icon.show-for-small
-            %a{:href => "#", "data-reveal-id" => "exibir"}
-              %i.foundicon-calendar
-          / .large-2.columns.panel.small-4.center
-          /   = link_to "Exibição", "#", "data-reveal-id" => "exibir"
-          .large-1.columns.small-3.pull-left
-            .fb-like{"data-href" => "https://www.facebook.com/cuicadesantoamaro", "data-layout" => "box_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "450"}
+    .large-12.columns
+      .row.panel
+        .small-12.columns.show-for-small
+          = link_to image_tag('cuica_logo-dark.png'), root_path
+        .small-12.columns.show-for-small
+          .flex-video.widescreen
+            %iframe{:allowfullscreen => "", :frameborder => "0", :height => "720", :src => "http://www.youtube.com/embed/dekX4o6UUHI?rel=0", :width => "1280"}
+        .large-8.columns.small-9
+          %p.typewriter.destaq2
+            Documentário sobra a vida e a obra do poeta popular, trovador-repórter e propagandista
+            %b.futura 
+              Cuíca de Santo Amaro
+            , personagem baiano, controverso e irreverente.
+        .large-1.columns.large-offset-2.small-2.icon.show-for-small
+          %a{:href => "#", "data-reveal-id" => "exibir"}
+            %i.foundicon-calendar
+        / .large-2.columns.panel.small-4.center
+        /   = link_to "Exibição", "#", "data-reveal-id" => "exibir"
+        .large-1.columns.small-3.pull-left
+          .fb-like{"data-href" => "https://www.facebook.com/cuicadesantoamaro", "data-layout" => "box_count", "data-send" => "false", "data-show-faces" => "false", "data-width" => "450"}
 
 #exibir.reveal-modal.r1
   .row

@@ -1,11 +1,11 @@
 .row
   .large-4.columns.large-centered.small-centered
     .row
-      %h1 Administrador
+      = image_tag('cuica_logo-dark.png')
       = form_tag sessions_path do
         .small-12.columns
           = label_tag :name
           = text_field_tag :name, params[:name], :placeholder => "username"
           = label_tag :password
           = password_field_tag :password
-          = submit_tag "Log In", :class => "large button secondary expand"
+          = submit_tag "Log In", :class => "large button secondary expand radius"
