@@ -1,13 +1,10 @@
 .row
-  .small-12.columns
-
-    %p#notice= notice
-
-    %h3.subheader
+  .small-6.push-3.columns.panel.top20.r-1
+    %h2.typewriter
       = @post.title
-    %p
+    %p.destaq2
       = @post.content
-
-    = link_to 'Editar', edit_post_path(@post)
-    \|
-    = link_to 'Voltar', posts_path
+    %span.destaq1
+      = link_to 'Editar', edit_post_path(@post)
+      \|
+      = link_to 'Voltar', posts_path

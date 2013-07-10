@@ -1,15 +1,22 @@
-.row
-  .small-12.columns
-    .row
-      .small-2.columns
-        %h1.subheader Notícias
-    - @posts.each do |post|
-      %h5= post.title
-      %small.timestamp
-        Posted #{time_ago_in_words(post.created_at)} ago.
-      %p= post.content
-      - if current_admin
-        %p
-          = link_to 'Visualizar', post
-          = link_to 'Editar', edit_post_path(post)
-          = link_to 'Deletar', post, method: :delete, data: { confirm: 'Are you sure?' }
+- if @posts
+  .row
+    .small-6.push-3.columns
+      %h2.futura.center Notícias
+      - @posts.each do |post|
+        .panel.large-centered
+          %h4.typewriter
+            = post.title
+          %span.destaq1
+            = post.content
+          %br
+          %small.timestamp
+            Posted #{time_ago_in_words(post.created_at)} ago.
+          - if current_admin
+            %small
+              = link_to 'Visualizar', post
+              = link_to 'Editar', edit_post_path(post)
+              = link_to 'Deletar', post, method: :delete, data: { confirm: 'Tem certeza?' }
+- else
+  .row
+    .small-12.columns.top20.center
+      %h4.futura.top20 Não existem notícias disponíveis. Aguarde novidades!
