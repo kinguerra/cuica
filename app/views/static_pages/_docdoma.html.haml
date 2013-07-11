@@ -5,8 +5,11 @@
       .row
         .large-4.columns.clipping
           %h4
-            = link_to "Baixar press release", "docdoma_pressrelease.zip"
-          %small § tamanho do arquivo §
+            = link_to "Baixar press release", "downloads/docdoma_pressrelease.zip"
+          %small
+            § 
+            / = number_to_human_size(File.size("downloads/docdoma_pressrelease.zip"))
+            §
         .large-4.columns
           %hr
           %p A DocDoma Filmes nasceu do espírito empreendedor de um grupo de jovens proﬁssionais, movidos pelo interesse no desenvolvimento do potencial audiovisual do Brasil. É uma produtora premiada de cinema, vídeo e conteúdos para TV.
