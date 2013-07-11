@@ -1,0 +1,38 @@
+/* Festivais */
+
+.festivais {
+  font-family: "Special Elite", "Courier New", Courier;
+  background-color: #ee768f !important;
+  border: none !important;
+  padding: 60px 0 !important;
+  b::selection , span::selection {
+    background: #ff1310; /* Safari */
+  }
+  b::-moz-selection, span::-moz-selection {
+    background: #ff1310; /* Firefox */
+  }
+  p {
+    background: url("festival-leaves.png") no-repeat 0 4px;
+    color: #291d13 !important;
+    text-align: center;
+    font-size: 8px;
+    padding: 0 30px;
+    margin: 30px 0; 
+    width: 149px;
+    min-height: 74px;
+    display:inline-block; 
+    vertical-align: middle;
+  }
+  b {
+    display: inline-block;
+  }
+  span { 
+  font-family: Verdana;
+  font-size: 7px;
+  display: block;
+  }
+  .asterix {
+    margin-top: 62px;
+    font-size: 10px;
+  }
+}

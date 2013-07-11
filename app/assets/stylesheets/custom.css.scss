@@ -1,3 +1,5 @@
+/* Typography */
+
 @font-face {
   font-family: '[set]Foundicons';
   src: url('fonts/[set]_foundicons.eot');
@@ -8,6 +10,18 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.futura {
+  font-family: "futura-pt-1","futura-pt-2",sans-serif;
+}
+.times {
+  font-family: "Times","Times New Roman",serif;
+}
+.typewriter {
+  font-family: "Special Elite", "Courier New", Courier, Times;
+}
+
+/* Foundation Icons */
  
 [class*="foundicon-"] {
   display: inline;
@@ -29,418 +43,28 @@
   text-decoration: inherit;
 }
 
+/* HTML Tags */
+
 body {
   overflow-x: hidden;
-}
-
-.futura {
-  font-family: "futura-pt-1","futura-pt-2",sans-serif;
-}
-.times {
-  font-family: "Times","Times New Roman",serif;
-}
-.typewriter {
-  font-family: "Special Elite", "Courier New", Courier, Times;
-}
-
-.uppercase {
-  text-transform: uppercase; 
 }
 p {
   text-align:justify;
   text-justify:inter-word;
 }
 
-/* Header*/
-.header {
-  background: url("cuica_header.jpg") no-repeat;
-  background-size: cover;
-  background-position-y: 15%;
-  .icon {
-    padding: 7px !important;
-  }
+
+/* CSS Helpers */
+
+.uppercase {
+  text-transform: uppercase; 
 }
 
-.logo {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top:5%;
-  margin-bottom: 30%;
-}
-
-.alert-box {
-  margin-bottom: 0px !important;
-}
-
-/* navbar */
-
-.main.nav-item.active {
-  background-color: #353556;
-  opacity: .8;
-  a {
-    color: #e3c5aa;
-    -webkit-transform:rotate(1deg);
-    -moz-transform:rotate(1deg);
-    -o-transform:rotate(1deg);
-    -ms-transform:rotate(1deg);
-    rotation:1deg;
-  }
-}
-
-.subheader {
-  margin-bottom: -0.8em !important;
-}
-
-[data-magellan-expedition] {
-  background-color: #e3c5aa !important;
-  font-family: "Special Elite", "Courier New", Courier, Times;
-  font-size: 1.3em;
-  padding-bottom: 3px !important;
-}
-
-
-#fbpage a, #blog a {
-  background-color: #324991;
-  color: white;
-  font-weight: bolder;
-  padding: 2px 8px;
-}
-
-#blog a {
-  background-color: #ea4221;
-  color: #f0c6a2;
-}
-
-
-@media only screen and (orientation: portrait) { 
-  .mobile {
-    font-size: .8em;
-    padding: 0 !important;
-  }
-}
-
-
-.navbar {
-  background-color: #f0c6a2 !important;
-}
-.inline-list {
-  margin: 0 !important;
-  > li {
-    margin: 0.375em !important;
-    padding: 5px !important;
-  }
-}
-
-ol.side-nav {
-  background-color: #EDEBD7;
-  width: 120%;
-  li {
-    a {
-  }
-    :hover {
-      background-color: #00adef;
-    }
-  }
-}
-
-/* Header Admin */
-.admin {
-  margin: 0 !important;
-}
-
-/* Historia */
-
-.historia, .festivais, .producao {
-  margin: 0;  
-  padding: 60px 0 !important;
-}
-
-.historia{
-  /* &:hover {
-  background-color: #f1e0b4;
-  transition: background-color 1s;
-  -webkit-transition: background-color 1s; Safari 
-  }*/
-  padding: 0 !important;
-  background: #e3c5aa;
-  /* transition: background-color 1s;
-  -webkit-transition: background-color 1s; Safari */
-  color: #353556;
-  h2, h5, p {
-    color: #353556;
-    text-align:justify;
-    text-justify:inter-word;
-  }
-  h2 {
-    font-size: 3.7em;
-    font-weight: 500;
-    margin: 0;
-  }
-  p::selection {
-    background: #ffb7b7; /* Safari */
-  }
-  p::-moz-selection {
-    background: #ffb7b7; /* Firefox */
-  }
-}
-
-.retrato {
-  position: absolute !important;
-  height: 100%;
-  background: url('cuica-foto.jpg');
-  left: 0;
-  background-size: cover;
-}
-
-/* Patrocinio */
-.patrocinio {
-  padding-top: 30px;
-  hr {
-    border: none;
-    height: 24px;
-    background: url('hr-bg3.gif') 50% 0 no-repeat;
-  }
-}
-
-/* Producao */
-.producao {
-  background: #d5c5a5;
-  h2, p, small {
-    color: #172171;
-  }
-  p::selection {
-    background: #29a331; /* Safari */
-  }
-  p::-moz-selection {
-    background: #29a331; /* Firefox */
-  }
-
-  h2 {
-    max-width: 300px;
-    font-size: 1.2em;
-    font-weight: 500;
-    transform:scale(0.9, 1.5); /* W3C */
-    -webkit-transform:scale(0.9, 1.5); /* Safari and Chrome */
-    -moz-transform:scale(0.9, 1.5); /* Firefox */
-    -ms-transform:scale(0.9, 1.5); /* IE 9 */
-    -o-transform:scale(0.9, 1.5); /* Opera */
-
-    -webkit-transform-origin: 0 20px; /* h-offset, v-offset */
-    -moz-transform-origin: 0 20px;
-    -o-transform-origin: 0 20px;
-    -ms-transform-origin: 0 20px;
-    transform-origin: 0 20px;
-    letter-spacing: 0.1em;
-    border-bottom: 2px solid #172171;
-    margin-bottom: 25px;
-    span.prod1 {
-      font-weight: 600;
-      transform:scale(1.5,1); /* W3C */
-      -webkit-transform:scale(1.5,1); /* Safari and Chrome */
-      -moz-transform:scale(1.5,1); /* Firefox */
-      -ms-transform:scale(1.5,1); /* IE 9 */
-      -o-transform:scale(1.5,1); /* Opera */
-    }
-  }
-  img {
-    border: 3px solid #373c79;
-    padding: 2px;
-  }
-}
-
-/* Festivais */
-
-.festivais {
-  font-family: "Special Elite", "Courier New", Courier;
-  background-color: #ee768f !important;
-  border: none !important;
-  padding: 60px 0 !important;
-  b::selection , span::selection {
-    background: #ff1310; /* Safari */
-  }
-  b::-moz-selection, span::-moz-selection {
-    background: #ff1310; /* Firefox */
-  }
-  p {
-    background: url("festival-leaves.png") no-repeat 0 4px;
-    color: #291d13 !important;
-    text-align: center;
-    font-size: 8px;
-    padding: 0 30px;
-    margin: 30px 0; 
-    width: 149px;
-    min-height: 74px;
-    display:inline-block; 
-    vertical-align: middle;
-  }
-  b {
-    display: inline-block;
-  }
-  span { 
-  font-family: Verdana;
-  font-size: 7px;
-  display: block;
-  }
-  .asterix {
-    margin-top: 62px;
-    font-size: 10px;
-  }
-}
-
-/* Notícias */
-.noticias {
-  background: url("fundo-folhetos.jpg") no-repeat;
-  background-size: 100%;
-  padding: 18%;
-    .panel {
-      width: 150%;
-      background-color: #268baa;
-    }
-}
-
-/* Diretores */
-
-.diretores {
-  padding: 3% 0% 3% 0%;
-  background-color: #bb3c3e;
-  h2, h3, h4 {
-    color: #411912
-  }
-  h2 {
-    font-size: 2.2em;
-    font-weight: bold;
-  }
-  h3 {
-    margin: 42px 0 7px;
-    line-height: 1em;
-    small {
-      font-size: 13px;
-      display: block;
-      margin: 11px 0 20px;
-    }
-  }
-  .josias {
-    font-size: 1.2em;
-  }
-  p::selection {
-    background: red; /* Safari */
-  }
-  p::-moz-selection {
-    background: red; /* Firefox */
-  }
-  .destaq2 {
-    font-size: 1.3em;
-    font-weight: bold;
-  }
-  img {
-    margin-top: 25px;
-    padding: 10px;
-    width: 130%
-  }
-  hr {
-    border: 0;
-    background-color: rgb(90, 30, 19);
-    height: 4px;
-    margin-bottom: 0;
-  }
-}
-
-#josias {
-  background-color: #9fd5d7;
-  ul, li {
-    list-style: none;
-  }
-}
-
-#joel {
-  background-color: #9fd5d7;
-  ul, li {
-    list-style: none;
-  }
-}
-
-#exibir {
-  background-color: #7eb361;
-  .close-reveal-modal {
-    color: white;
-  }
-}
-
-/* Docdoma */
-.docdoma {
-  background-color: #f3de7f;
-  h2, p {
-    color: #291d13;
-  }
-  .clipping {
-    background: url("briga.gif") 0 140px no-repeat;
-    min-height: 380px;
-  }
-  hr {
-    background: url("hr-bg1.gif");
-    height: 6px;
-    border: none;
-    margin: 0.8em 0;
-  }
-  p::selection {
-    background: #ebc20a; /* Safari */
-  }
-  p::-moz-selection {
-    background: #ebc20a; /* Firefox */
-  }
-}
-
-/* Personagem */
-
-.personagem {
-  background-color: #339966;
-  padding: 30px 0;
-  .large-3.columns {
-    padding: 0 5px;
-  }
-  h2, p, h4 {
-    color: #112119;
-  }
-  h2 {
-    line-height: 1em;
-    font-size: 3.4em;
-    font-weight: 500;
-    margin: 0 0 -19px;
-    span {
-      text-transform: uppercase;
-    }
-  }
-  h4 {
-    font-size: 0.8em;
-    line-height: 0em;
-  }
-  p {
-    line-height: 1.3em;
-  }
-  p::selection, h2::selection, img::selection, span::selection, h4::selection {
-    background: #dfc429; /* Safari */
-  }
-  p::-moz-selection, h2::-moz-selection, img::-moz-selection, span::-moz-selection, h4::-moz-selection {
-    background: #dfc429; /* Firefox */
-  }
-  hr {
-    background: url("hr-bg2.gif") 50% 0 no-repeat;
-    border: none;
-    height: 11px;
-  }
-}
-
-.alerts {
-  position: absolute;
-  width: 100%;
-}
-
-/* Helpers */
 .center {
   text-align: center;
 }
 
-/* Rotation Helpers */
+/* Rotation Helper */
 .r1 {
   -webkit-transform:rotate(0.8deg);
   -moz-transform:rotate(0.8deg);
@@ -463,7 +87,7 @@ ol.side-nav {
   rotation:-1.1deg;
 }
 
-/* Marging helpers */
+/* Marging helper */
 .top5 {
   margin-top: 5px;
 }
@@ -480,7 +104,7 @@ ol.side-nav {
   margin-top: 20px;
 }
 
-/* Font-size Helpers */
+/* Font-size Helper */
 .destaq1 {
   font-size: 0.9em;
   font-weight: lighter;
@@ -490,7 +114,7 @@ ol.side-nav {
   font-weight: lighter;
 }
 
-/* Opacity Helpers */
+/* Opacity Helper */
 
 .opacity9 {
   Opacity: .9;

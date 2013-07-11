@@ -1,0 +1,46 @@
+/* Producao */
+
+.producao {
+  background: #d5c5a5;
+  h2, p, small {
+    color: #172171;
+  }
+  p::selection {
+    background: #29a331; /* Safari */
+  }
+  p::-moz-selection {
+    background: #29a331; /* Firefox */
+  }
+
+  h2 {
+    max-width: 300px;
+    font-size: 1.2em;
+    font-weight: 500;
+    transform:scale(0.9, 1.5); /* W3C */
+    -webkit-transform:scale(0.9, 1.5); /* Safari and Chrome */
+    -moz-transform:scale(0.9, 1.5); /* Firefox */
+    -ms-transform:scale(0.9, 1.5); /* IE 9 */
+    -o-transform:scale(0.9, 1.5); /* Opera */
+
+    -webkit-transform-origin: 0 20px; /* h-offset, v-offset */
+    -moz-transform-origin: 0 20px;
+    -o-transform-origin: 0 20px;
+    -ms-transform-origin: 0 20px;
+    transform-origin: 0 20px;
+    letter-spacing: 0.1em;
+    border-bottom: 2px solid #172171;
+    margin-bottom: 25px;
+    span.prod1 {
+      font-weight: 600;
+      transform:scale(1.5,1); /* W3C */
+      -webkit-transform:scale(1.5,1); /* Safari and Chrome */
+      -moz-transform:scale(1.5,1); /* Firefox */
+      -ms-transform:scale(1.5,1); /* IE 9 */
+      -o-transform:scale(1.5,1); /* Opera */
+    }
+  }
+  img {
+    border: 3px solid #373c79;
+    padding: 2px;
+  }
+}

@@ -1,0 +1,93 @@
+/* Header*/
+.header {
+  background: url("cuica_header.jpg") no-repeat;
+  background-size: cover;
+  background-position-y: 15%;
+  .icon {
+    padding: 7px !important;
+  }
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:5%;
+  margin-bottom: 30%;
+}
+
+/* navbar */
+
+.main.nav-item.active {
+  background-color: #353556;
+  opacity: .8;
+  a {
+    color: #e3c5aa;
+    -webkit-transform:rotate(1deg);
+    -moz-transform:rotate(1deg);
+    -o-transform:rotate(1deg);
+    -ms-transform:rotate(1deg);
+    rotation:1deg;
+  }
+}
+
+.subheader {
+  margin-bottom: -0.8em !important;
+}
+
+[data-magellan-expedition] {
+  background-color: #e3c5aa !important;
+  font-family: "Special Elite", "Courier New", Courier, Times;
+  font-size: 1.3em;
+  padding-bottom: 3px !important;
+}
+
+
+#fbpage a, #blog a {
+  background-color: #324991;
+  color: white;
+  font-weight: bolder;
+  padding: 2px 8px;
+}
+
+#blog a {
+  background-color: #ea4221;
+  color: #f0c6a2;
+}
+
+.navbar {
+  background-color: #f0c6a2 !important;
+}
+.inline-list {
+  margin: 0 !important;
+  > li {
+    margin: 0.375em !important;
+    padding: 5px !important;
+  }
+}
+
+ol.side-nav {
+  background-color: #EDEBD7;
+  width: 120%;
+  li {
+    a {
+  }
+    :hover {
+      background-color: #00adef;
+    }
+  }
+}
+
+/* Header Admin */
+
+.admin {
+  margin: 0 !important;
+}
+
+.alert-box {
+  margin-bottom: 0px !important;
+}
+
+.alerts {
+  position: absolute;
+  width: 100%;
+}

@@ -1,0 +1,17 @@
+/* Notícias */
+
+.noticias {
+  background: url("fundo-folhetos.jpg") no-repeat;
+  background-size: 100%;
+  padding: 18%;
+    .panel {
+      background-color: #268baa;
+    }
+}
+
+#exibir {
+  background-color: #7eb361;
+  .close-reveal-modal {
+    color: white;
+  }
+}

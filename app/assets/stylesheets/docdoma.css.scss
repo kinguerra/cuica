@@ -1,0 +1,24 @@
+/* Docdoma */
+
+.docdoma {
+  background-color: #f3de7f;
+  h2, p {
+    color: #291d13;
+  }
+  .clipping {
+    background: url("briga.gif") 0 140px no-repeat;
+    min-height: 380px;
+  }
+  hr {
+    background: url("hr-bg1.gif");
+    height: 6px;
+    border: none;
+    margin: 0.8em 0;
+  }
+  p::selection {
+    background: #ebc20a; /* Safari */
+  }
+  p::-moz-selection {
+    background: #ebc20a; /* Firefox */
+  }
+}

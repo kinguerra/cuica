@@ -1,0 +1,43 @@
+/* Historia */
+
+.historia, .festivais, .producao {
+  margin: 0;  
+  padding: 60px 0 !important;
+}
+
+.historia{
+  /* &:hover {
+  background-color: #f1e0b4;
+  transition: background-color 1s;
+  -webkit-transition: background-color 1s; Safari 
+  }*/
+  padding: 0 !important;
+  background: #e3c5aa;
+  /* transition: background-color 1s;
+  -webkit-transition: background-color 1s; Safari */
+  color: #353556;
+  h2, h5, p {
+    color: #353556;
+    text-align:justify;
+    text-justify:inter-word;
+  }
+  h2 {
+    font-size: 3.7em;
+    font-weight: 500;
+    margin: 0;
+  }
+  p::selection {
+    background: #ffb7b7; /* Safari */
+  }
+  p::-moz-selection {
+    background: #ffb7b7; /* Firefox */
+  }
+}
+
+.retrato {
+  position: absolute !important;
+  height: 100%;
+  background: url('cuica-foto.jpg');
+  left: 0;
+  background-size: cover;
+}
