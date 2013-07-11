@@ -75,12 +75,11 @@
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
 
-    = javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
-    = javascript_include_tag "vendor/jquery.scrolldepth.js"
+    = javascript_include_tag "jquery.scrolldepth.js"
     :javascript
       $(function() {
         $.scrollDepth();
-        elements: ['#historia','#noticias','#personagem','#producao','#diretores', ,'#docdoma', 'footer'] // Track DOM elements
+        elements: ['#historia','#noticias','#personagem','#producao','#diretores', ,'#docdoma', 'footer'], // Track DOM elements
         percentage: false, // Don't track depth percentage
       });
 
