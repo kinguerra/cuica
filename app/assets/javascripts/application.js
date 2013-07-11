@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require vendor/assets/javascripts/jquery.scrolldepth
+//= jquery.scrolldepth
 //= require_tree .
 
 $(document).foundation();
