@@ -10,6 +10,16 @@
  *
  *= require_self
  *= require custom
+ *= require diretores
+ *= require docdoma
+ *= require festivais
+ *= require footer
  *= require foundation_and_overrides
+ *= require header
+ *= require historia
+ *= require media_queries
+ *= require noticias_and_exibicao
+ *= require personagem
+ *= require producao
  *= require_tree .
  */
