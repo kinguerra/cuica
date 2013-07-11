@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= jquery.scrolldepth
+//= require jquery.scrolldepth
 //= require_tree .
 
 $(document).foundation();
