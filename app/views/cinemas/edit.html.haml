@@ -1,7 +1,8 @@
-%h1 Editing cinema
-
-= render 'form'
-
-= link_to 'Show', @cinema
-\|
-= link_to 'Back', cinemas_path
+.row
+  .small-6.push-3.columns
+    %h2.futura.center Editar Exibição
+    = render 'form'
+    %span.destaq1
+      = link_to 'Show', @cinema
+      \|
+      = link_to 'Back', cinemas_path

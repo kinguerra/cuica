@@ -1,7 +1,8 @@
-%h1 Editar Poesia
-
-= render 'form'
-
-= link_to 'Visualizar', @poem
-\|
-= link_to 'Voltar', poems_path
+.row
+	.small-6.push-3.columns
+		%h2.futura Editar Poesia
+    = render 'form'
+    %span.destaq1
+      = link_to 'Visualizar', @poem
+      \|
+      = link_to 'Voltar', poems_path

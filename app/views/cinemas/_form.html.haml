@@ -7,8 +7,10 @@
           %li= msg
 
   .field
+    = f.text_field :date, placeholder: "Dias e Horarios"
+  .field
     = f.text_field :place, placeholder: "Local"
   .field
-    = f.datetime_select :date, start_year: 2013
+    = f.text_field :address, placeholder: "Endereço"
   .actions
-    = f.submit 'Save'
+    = f.submit 'Salvar'

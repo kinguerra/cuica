@@ -4,11 +4,15 @@
     - @cinemas.each do |cinema|
       .panel.large-centered
         %h6
-          %span.times
+          %span.typewriter
             = cinema.place
           %br
-            = cinema.date.strftime("%d %B %Y") 
-            = cinema.date.strftime("às %H:%M")
+          %span.times.destaq1
+            = cinema.date
+          %br
+          %small
+            = cinema.address
+
         - if current_admin
           %small
             = link_to 'Visualizar', cinema

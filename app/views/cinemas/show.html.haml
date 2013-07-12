@@ -1,8 +1,11 @@
 .row
-  .small-12.columns
+  .small-6.push-3.columns
     %p#notice= notice
     
-    %h3.subheader O Cuica vai passar
-    %h3
+    %h2.times O Cuica vai passar
+    %span.destaq2
       = @cinema.place
+    %span.destaq1
+      = @cinema.address
+    %span.destaq1
       = @cinema.date

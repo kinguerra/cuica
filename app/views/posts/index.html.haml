@@ -11,6 +11,7 @@
           %br
           %small.timestamp
             Posted #{time_ago_in_words(post.created_at)} ago.
+          %br
           - if current_admin
             %small
               = link_to 'Visualizar', post
