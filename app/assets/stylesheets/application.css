@@ -21,5 +21,6 @@
  *= require noticias_and_exibicao
  *= require personagem
  *= require producao
+ *= require equipe
  *= require_tree .
  */
