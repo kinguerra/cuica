@@ -7,9 +7,20 @@
     %section.top-bar-section
       %ul.left
         %li.divider
-        %li=link_to "Adicionar Notícia", new_post_path
-        %li=link_to "Editar Notícias", posts_path
-        %li=link_to "Adicionar Exibição", new_cinema_path
-        %li=link_to "Editar Exibições", cinemas_path
+        %li.has-dropdown
+          =link_to "Notícia", new_post_path
+          %ul.dropdown
+            %li=link_to "Adicionar Notícia", new_post_path
+            %li=link_to "Editar Notícias", posts_path
+        %li.has-dropdown
+          =link_to "Exibições", new_cinema_path
+          %ul.dropdown
+            %li=link_to "Adicionar Exibição", new_cinema_path
+            %li=link_to "Editar Exibições", cinemas_path
+        %li.has-dropdown
+          =link_to "Poesias", new_poem_path
+          %ul.dropdown
+            %li=link_to "Adicionar Poesia", new_poem_path
+            %li=link_to "Editar Poesias", poems_path
         %li.divider
         %li= link_to "#{current_admin.name} | Sair", logout_path

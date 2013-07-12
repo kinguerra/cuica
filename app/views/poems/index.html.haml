@@ -1,0 +1,14 @@
+.row
+  .small-6.push-3.columns
+    %h2.futura.center Poesias
+    - @poems.each do |poem|
+      .panel.large-centered
+        %h6
+          %h4.typewriter= poem.title
+          %span.typewriter= poem.content
+          %br
+        - if current_admin
+          %small
+            = link_to 'Visualizar', poem
+            = link_to 'Editar', edit_poem_path(poem)
+            = link_to 'Deletar', poem, method: :delete, data: { confirm: 'Tem certeza?' }
