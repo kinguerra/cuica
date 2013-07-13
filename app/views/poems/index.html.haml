@@ -9,6 +9,6 @@
           %br
         - if current_admin
           %small
-            = link_to 'Visualizar', poem
-            = link_to 'Editar', edit_poem_path(poem)
-            = link_to 'Deletar', poem, method: :delete, data: { confirm: 'Tem certeza?' }
+            = link_to 'Visualizar', poem, class: "small button secondary round"
+            = link_to 'Editar', edit_poem_path(poem), class: "small button secondary round"
+            = link_to 'Deletar', poem, method: :delete, data: { confirm: 'Tem certeza?' }, class: "small button alert round"
