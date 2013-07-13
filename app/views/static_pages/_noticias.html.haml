@@ -4,5 +4,7 @@
       - if @noticia
         %h4 A Sair
         - @noticia.each do |post|
+          %h6.typewriter 
+            = link_to post.title, posts_path
           %h6= link_to raw(post.content), posts_path
           %p Posted #{time_ago_in_words(post.created_at)} ago.

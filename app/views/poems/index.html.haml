@@ -4,7 +4,7 @@
     - @poems.each do |poem|
       .panel.large-centered
         %h6
-          %h4.typewriter= poem.title
+          %h4.typewriter.center= poem.title
           %span.typewriter= raw(poem.content)
           %br
         - if current_admin
