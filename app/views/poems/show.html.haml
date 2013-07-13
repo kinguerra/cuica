@@ -4,7 +4,7 @@
     
     %h2.typewriter.center= @poem.title
     %p
-      = @poem.content
+      = raw(@poem.content)
     %span.destaq1
       = link_to "Editar", edit_poem_path(@poem)
       \|

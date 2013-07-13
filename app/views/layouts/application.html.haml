@@ -21,7 +21,8 @@
   = javascript_include_tag "vendor/custom.modernizr"
   = csrf_meta_tag
   %link{:href => "http://fonts.googleapis.com/css?family=Special+Elite", :rel => "stylesheet", :type => "text/css"}/
-
+  = init_tinymce_hammer_if_required
+  
   :javascript
     (function() {
       var config = {

@@ -16,7 +16,6 @@ group :development do
   gem 'binding_of_caller'
 end
 
-
 group :assets do
   gem 'sass-rails',   '3.2.5'
   gem 'coffee-rails', '3.2.2'

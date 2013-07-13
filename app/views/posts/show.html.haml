@@ -3,7 +3,7 @@
     %h2.typewriter
       = @post.title
     %p.destaq2
-      = @post.content
+      = raw(@post.content)
     %span.destaq1
       = link_to 'Editar', edit_post_path(@post)
       \|

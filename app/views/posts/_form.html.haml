@@ -8,6 +8,6 @@
 
   .field
     = f.text_field :title, placeholder: "Título"
-    = f.text_area :content, placeholder: "Conteúdo"
+    = f.tinymce :content, placeholder: "Conteúdo"
   .actions
     = f.submit 'Enviar'

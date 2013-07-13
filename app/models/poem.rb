@@ -5,4 +5,6 @@ class Poem < ActiveRecord::Base
 
   validates_presence_of :title
   validates_presence_of :content
+
+  default_scope order: 'poems.created_at DESC'
 end

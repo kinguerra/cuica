@@ -5,7 +5,7 @@
       .panel.large-centered
         %h6
           %h4.typewriter= poem.title
-          %span.typewriter= poem.content
+          %span.typewriter= raw(poem.content)
           %br
         - if current_admin
           %small

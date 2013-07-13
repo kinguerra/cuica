@@ -7,7 +7,7 @@
           %h4.typewriter
             = post.title
           %span.destaq1
-            = post.content
+            = raw(post.content)
           %br
           %small.timestamp
             Posted #{time_ago_in_words(post.created_at)} ago.
