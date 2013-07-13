@@ -28,12 +28,14 @@
     .large-12.columns
       - if @exibition
         %h4 Próximas Exibições
-        - @exibition.each do |cinema|
-          %ul.pricing-table
-            %li.title= cinema.date.strftime("%d %B %Y")
-            %li.price= cinema.date.strftime("%H:%M")
-            %li.description= cinema.place
-            %li.bullet-item Cidade
-            %li.cta-button
-              %a.button{:href => "#"} Mais informarções
+        %ul
+          - @exibition.each do |cinema|
+            
+            %li.panel
+              .destaq2.futura= cinema.place
+              .destaq1
+              = cinema.address
+              = cinema.date
+            / %li.cta-button
+            /   %a.button{:href => "#"} Mais informarções
   %a.close-reveal-modal ×
