@@ -9,15 +9,14 @@
           %span.destaq1
             = raw(post.content)
           %br
-          %small.timestamp
-            Posted #{time_ago_in_words(post.created_at)} ago.
           %br
           - if current_admin
             %small
-              = link_to 'Visualizar', post
-              = link_to 'Editar', edit_post_path(post)
-              = link_to 'Deletar', post, method: :delete, data: { confirm: 'Tem certeza?' }
+              = link_to 'Visualizar', post, class: "small button secondary round"
+              = link_to 'Editar', edit_post_path(post), class: "small button secondary round"
+              = link_to 'Deletar', post, method: :delete, data: { confirm: 'Tem certeza?' }, class: "small button alert round"
+              Posted #{time_ago_in_words(post.created_at)} ago.
 - else
   .row
     .small-12.columns.top20.center
-      %h4.futura.top20 Não existem notícias disponíveis. Aguarde novidades!
+      %h4.futura.top20 Não existem notícias disponíveis. Aguarde novidades
