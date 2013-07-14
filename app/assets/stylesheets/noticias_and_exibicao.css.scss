@@ -4,9 +4,14 @@
   background: url("fundo-folhetos.jpg") no-repeat;
   background-size: 100%;
   padding: 18%;
-    .panel {
-      background-color: #268baa;
-    }
+  max-height: 700px;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .panel {
+    background-color: #268baa;
+  }
 }
 
 #exibir {
