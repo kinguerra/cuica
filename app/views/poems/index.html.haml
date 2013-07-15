@@ -1,6 +1,9 @@
 .row
   .small-6.push-3.columns
     %h2.futura.center Poesias
+    = link_to new_poem_path(@poem) do 
+      .tiny.button.uppercase.radius.secondary +
+      Adicionar Poema
     - @poems.each do |poem|
       .panel.large-centered
         %h6

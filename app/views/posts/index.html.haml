@@ -1,7 +1,11 @@
 - if @posts
   .row
     .small-6.push-3.columns
-      %h2.futura.center Notícias
+      %h2.futura.center
+        Notícias
+      = link_to new_post_path(@post) do 
+        .tiny.button.uppercase.radius.secondary +
+        Adicionar Notícias
       - @posts.each do |post|
         .panel.large-centered
           %h4.typewriter
