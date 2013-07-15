@@ -25,14 +25,18 @@
               %table
                 %thead
                   %tr
-                    %th{width: "25%"}
-                    %th{width: "75%"} Próximas Exibições
+                    %th.center{colspan: 2} Próximas Exibições
                 %tbody
                   - @exibition.each do |cinema|
                     %tr
-                      %td
+                      %td{width: "25%"}
                         %small= cinema.date
-                      %td
+                      %td{width: "75%"}
                         %span.round.label.secondary.has-tip.futura{"data-tooltip" => "", title: "#{cinema.address}"}= cinema.place
+                  - if current_admin
+                    %tr
+                      %td.center{colspan: 2}
+                        = link_to "+ Adicionar novo", new_cinema_path, class: "radius label success"
+                        = link_to "Edit", cinemas_path, class: "radius label secondary"
                     
                     

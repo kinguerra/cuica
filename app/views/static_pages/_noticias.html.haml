@@ -2,7 +2,12 @@
   .row
     .large-6.columns.large-centered.panel
       - if @noticia
-        %h4 A Sair
+        %h4 
+          A Sair
+          - if current_admin
+            %small
+              = link_to "+ Adicionar nova", new_post_path, class: "radius label success"
+              = link_to "Edit", posts_path, class: "radius label secondary"
         - @noticia.each do |post|
           %h6.typewriter 
             = link_to post.title, posts_path
