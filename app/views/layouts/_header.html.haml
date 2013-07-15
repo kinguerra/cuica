@@ -65,19 +65,19 @@
               player.playVideo();
           }
 
-#exibir.reveal-modal.r1
-  .row
-    .large-12.columns
-      - if @exibition
-        %h4 Próximas Exibições
-        %ul
-          - @exibition.each do |cinema|
+/ #exibir.reveal-modal.r1
+/   .row
+/     .large-12.columns
+/       - if @exibition
+/         %h4 Próximas Exibições
+/         %ul
+/           - @exibition.each do |cinema|
             
-            %li.panel
-              .destaq2.futura= cinema.place
-              .destaq1
-              = cinema.address
-              = cinema.date
-            / %li.cta-button
-            /   %a.button{:href => "#"} Mais informarções
-  %a.close-reveal-modal ×
+/             %li.panel
+/               .destaq2.futura= cinema.place
+/               .destaq1
+/               = cinema.address
+/               = cinema.date
+/             / %li.cta-button
+/             /   %a.button{:href => "#"} Mais informarções
+/   %a.close-reveal-modal ×
