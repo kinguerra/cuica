@@ -32,6 +32,9 @@
   p::-moz-selection {
     background: #ffb7b7; /* Firefox */
   }
+  th {
+    border-bottom: 1px solid black !important;
+  }
 }
 
 .retrato {
