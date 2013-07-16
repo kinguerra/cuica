@@ -1,41 +1,43 @@
 #docdoma.docdoma{"data-magellan-destination" => "docdoma"}
   .row
     .large-12.columns
-      %h2.center A Docdoma
+      %h2.center.doclogo A Docdoma
       .row
-        .large-4.columns.clipping
+        .large-4.columns.clipping.futura.uppercase.center
+          %small Baixar
           %h4
-            = link_to "Baixar press release", "docdoma_pressrelease.zip"
+            = link_to "Clipping", "docdoma_pressrelease.zip"
           %small
             § 358 kb §
         .large-4.columns
-          %hr
+          %hr.opacity9
           %p A DocDoma Filmes nasceu do espírito empreendedor de um grupo de jovens proﬁssionais, movidos pelo interesse no desenvolvimento do potencial audiovisual do Brasil. É uma produtora premiada de cinema, vídeo e conteúdos para TV.
-          %p A DocDoma tem a missão de acreditar no valor técnico e criativo do mercado  audiovisual produzido no Brasil e se propor a desenvolvê-lo de dentro para  fora, desenvolvendo projetos marcados pelos valores da cultura regional,  porém com um apelo universal, tornando-se assim uma referência de  qualidade e competência técnica e artística.
-          %p Os seus ﬁlmes, juntos, obtiveram mais de 30 prêmios em festivais nacionais e internacionais. 
+          %p.opacity8 A DocDoma tem a missão de acreditar no valor técnico e criativo do mercado  audiovisual produzido no Brasil e se propor a desenvolvê-lo de dentro para  fora, desenvolvendo projetos marcados pelos valores da cultura regional,  porém com um apelo universal, tornando-se assim uma referência de  qualidade e competência técnica e artística.
+          %p.opacity7 Os seus ﬁlmes, juntos, obtiveram mais de 30 prêmios em festivais nacionais e internacionais. 
           %hr
-        .large-2.columns.large-offset-1
-          %h4 Contato
-          %ul
+        .large-3.columns.large-offset-1.center
+          %h4.times.uppercase Contato
+          %hr.lines
+          %ul.opacity5
             %li 
               Adler Paz
               %ul
-                %li kibe@docdoma.com.br
+                %li= mail_to "kibe@docdoma.com.br"
             %li 
               Bau Carvalho
               %ul
-                %li bau@docdoma.com.br
+                %li= mail_to "bau@docdoma.com.br"
       %address
         .row
-          .large-2.columns.large-offset-1.right
-            %span{itemprop: "telephone"}
-              = link_to "+55 (71) 3354.6123", "tel:+557133546123"
-            www.docdoma.com.br
+          .large-3.columns.large-offset-1.right.center
+            %small
+              %span{itemprop: "telephone"}
+                = link_to "+55 71 3354.6123", "tel:+557133546123"
+              %u= link_to "www.docdoma.com.br", "http://www.docdoma.com.br"
           .large-4.columns.left.large-offset-4.center
-            Rua Haeckel José de Almeida 177, 
-            %br 
-            Sala 26, Jaguaribe
-            %br
-            Salvador Bahia 41613-100
-            %br 
-            Brasil
+            %small
+              Rua Haeckel José de Almeida 177, 
+              %br 
+              Sala 26, Jaguaribe
+              %br
+              Salvador Bahia 41613-100

@@ -2,12 +2,26 @@
 
 .docdoma {
   background-color: #f3de7f;
+  padding: 10px 0 30px;
+  .doclogo {
+    background: transparent url("docdoma.gif") no-repeat 50% 0;
+    line-height: 2em;
+    margin: 20px 0;
+    background-size: contain;
+    color: transparent;
+  }
   h2, p {
     color: #291d13;
+    line-height: 1.4em;
+  }
+  h4 {
+    line-height: 1.4em;
+    margin: -5px 0;
   }
   .clipping {
-    background: url("briga.gif") 0 140px no-repeat;
-    min-height: 380px;
+    background: url("briga.gif") 0 63px no-repeat;
+    min-height: 340px;
+    background-size: 100%;
   }
   hr {
     background: url("hr-bg1.gif");
@@ -15,10 +29,26 @@
     border: none;
     margin: 0.8em 0;
   }
+  hr.lines {
+    background: url("hr-bg3.gif") no-repeat 50% 0;
+    height: 26px;
+  }
   p::selection {
     background: #ebc20a; /* Safari */
   }
   p::-moz-selection {
     background: #ebc20a; /* Firefox */
+  }
+  ul, li {
+    list-style: none;
+    margin-left: 0;
+    font-size: 0.97em;
+  }
+  li {
+    margin-bottom: 20px;
+  }
+  address {
+    font-weight: 800;
+    font-style: normal;
   }
 }
