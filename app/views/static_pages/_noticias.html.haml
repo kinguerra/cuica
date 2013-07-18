@@ -11,7 +11,7 @@
         - @noticia.each do |post|
           %h6.typewriter
             %span.uppercase= post.title
-            %small #{time_ago_in_words(post.created_at)} ago
+            %small #{time_ago_in_words(post.created_at)} atrás
           %p.times= raw(post.content)
         - if current_admin
           %small
