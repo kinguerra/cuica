@@ -6,6 +6,11 @@
   .large-3.columns {
     padding: 0 5px;
   }
+  .content {
+    height: 310px !important;
+    overflow: hidden;
+    font-size: 0.8em;
+  }
   h2, p, h4 {
     color: #112119;
   }
@@ -36,4 +41,7 @@
     border: none;
     height: 11px;
   }
+  /*.section-container section .title a, .section-container .section .title a, .section-container.auto section .title a, .section-container.auto .section .title a {
+    padding: 0.2375em !important
+  }*/
 }

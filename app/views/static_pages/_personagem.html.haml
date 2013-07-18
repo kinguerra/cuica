@@ -31,5 +31,16 @@
 
           %p.r-1 Durante duas décadas Cuíca de Santo Amaro atenta contra o pudor e brada contra a hipocrisia, revela em praça pública segredos de alcova e trapaças de ricos marreteiros. “Comigo não tem bronca”, garante. É a versão popular do boca de brasa, o Gregório de Mattos sem gramática. Poeta mais temido da Bahia é o defensor do povo, a voz do escândalo; porém sua poesia e atuação, às vezes, sabe também louvar poderosos, sobretudo quando se trata daquilo que chama de “matéria paga”. É um herói e um anti-herói. O arauto. Anunciador. Anjo torto, da boca torta, poeta livre. O maior comunicador que a Bahia já teve.
 
+
         .large-6.columns
-          = image_tag "pers-livreto.gif"
+          - if @poem
+            .section-container.auto{"data-section" => ""}
+              - @poem.each do |poem|
+                %section
+                  %p.title.typewriter{"data-section-title" => ""}
+                    %a{:href => "\##{poem.title}"}= poem.title
+                  .content.typewriter{"data-section-content" => ""}
+                    %h6.center= poem.title
+                    .vertalign= raw(poem.content)
+          - else
+            = image_tag "pers-livreto.gif"
