@@ -4,7 +4,8 @@
   font-family: "Special Elite", "Courier New", Courier;
   background-color: #ee768f !important;
   border: none !important;
-  padding: 60px 0 !important;
+  padding: 30px 0 !important;
+  margin: 0;  
   b::selection , span::selection {
     background: #ff1310; /* Safari */
   }
@@ -15,11 +16,11 @@
     background: url("festival-leaves.png") no-repeat 0 4px;
     color: #291d13 !important;
     text-align: center;
-    font-size: 8px;
+    font-size: .9em;
     padding: 0 30px;
-    margin: 30px 0; 
-    width: 149px;
-    min-height: 74px;
+    margin: 8px 0 8px -30px; 
+    width: 200px;
+    min-height: 100px;
     display:inline-block; 
     vertical-align: middle;
   }
