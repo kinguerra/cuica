@@ -2,14 +2,21 @@
   .row
     .large-6.columns.large-centered.panel
       - if @noticia
-        %h4 
+        %h4.futura.uppercase.center
           A Sair
           - if current_admin
             %small
-              = link_to "+ Adicionar nova", new_post_path, class: "radius label success"
               = link_to "Edit", posts_path, class: "radius label secondary"
+        %hr
         - @noticia.each do |post|
-          %h6.typewriter 
-            = link_to post.title, posts_path
-          %h6= link_to raw(post.content), posts_path
-          %p Posted #{time_ago_in_words(post.created_at)} ago.
+          %h6.typewriter
+            %span.uppercase= post.title
+            %small #{time_ago_in_words(post.created_at)} ago
+          %p.times= raw(post.content)
+        - if current_admin
+          %small
+            = link_to "+ Adicionar nova", new_post_path, class: "radius label success"
+        %h5.times.center
+          = link_to "https://www.facebook.com/cuicadesantoamaro" do
+            Acompanhe as últimas pelo
+            %span.typewriter Facebook.
