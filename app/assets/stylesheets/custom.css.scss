@@ -68,6 +68,10 @@ p {
   text-align: center;
 }
 
+.pointer {
+  cursor: pointer !important;
+}
+
 /* Rotation Helper */
 .r1 {
   -webkit-transform:rotate(0.8deg);

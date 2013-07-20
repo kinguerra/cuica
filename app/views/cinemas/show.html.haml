@@ -1,11 +1,13 @@
 .row
   .small-6.push-3.columns
-    %p#notice= notice
-    
-    %h2.times O Cuica vai passar
-    %span.destaq2
-      = @cinema.place
+ 
+  %h2.times O Cuica vai passar
+  %span.destaq2
+    = @cinema.place
+  %span.destaq1
+    = @cinema.address
+  %span.destaq1
+    = @cinema.date
+  - if @cinema.link?
     %span.destaq1
-      = @cinema.address
-    %span.destaq1
-      = @cinema.date
+      = link_to "Veja o site", @cinema.link

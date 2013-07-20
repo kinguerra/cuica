@@ -12,5 +12,9 @@
     = f.text_field :place, placeholder: "Local"
   .field
     = f.text_field :address, placeholder: "Endereço"
-  .actions
-    = f.submit 'Salvar'
+  .field
+    = f.text_field :link, placeholder: "Site"
+  .row
+    .large-12.columns
+      .actions
+        = f.submit 'Salvar'

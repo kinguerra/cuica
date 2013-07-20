@@ -1,5 +1,5 @@
 class Cinema < ActiveRecord::Base
-  attr_accessible :date, :place, :address
+  attr_accessible :date, :place, :address, :link
 
   belongs_to :admin
 

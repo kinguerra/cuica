@@ -34,7 +34,11 @@
                       %td{width: "25%"}
                         %small= cinema.date
                       %td{width: "75%"}
-                        %span.round.label.secondary.has-tip.futura{"data-tooltip" => "", title: "#{cinema.address}"}= cinema.place
+                        %span.round.label.secondary.has-tip.futura{"data-tooltip" => "", title: "#{cinema.address}"}
+                          - if cinema.link?
+                            %a{"href" => "#{cinema.link}"}= cinema.place
+                          - else
+                            = cinema.place
                   - if current_admin
                     %tr
                       %td.center{colspan: 2}
