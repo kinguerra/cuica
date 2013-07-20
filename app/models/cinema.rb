@@ -1,5 +1,3 @@
-require 'uri'
-
 class Cinema < ActiveRecord::Base
   attr_accessible :date, :place, :address, :link
   
