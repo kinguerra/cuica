@@ -33,7 +33,7 @@
 
 
         .large-6.columns
-          - if @poem
+          - if @poem.count
             .section-container.auto{"data-section" => ""}
               - @poem.each do |poem|
                 %section
