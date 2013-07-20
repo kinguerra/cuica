@@ -13,7 +13,7 @@ class Cinema < ActiveRecord::Base
 
   
   before_save do
-    unless self.link.index(/(http|https):\/\//, 0) && self.link?
+    unless self.link.index(/(http|https):\/\//, 0) || self.link.empty?
       self.link.insert(0, "http://")
     end
   end
